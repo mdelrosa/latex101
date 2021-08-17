@@ -1,0 +1,79 @@
+% day01.tex
+
+% Copyright 2019 Clara Eleonore Pavillet
+
+% Author: Clara Eleonore Pavillet
+% Description: This is an unofficial Oxford University Beamer Template I made from scratch. Feel free to use it, modify it, share it.
+% Version: 1.0
+
+\documentclass{beamer}
+\usepackage{import} % for some reason, this doesn't work when called in sty file
+\input{Theme/Packages.tex}
+\usepackage{lecture_notes}
+\usepackage{bibentry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\graphicspath{ {../images/} }
+
+\nobibliography*
+% \usepackage[perpage]{footmisc}
+\usetheme{oxonian}
+
+
+\title{Day 01: Intro to \LaTeX }
+\titlegraphic{\includegraphics[width=3cm]{Theme/Logos/DavisLogoV1.png}}
+\author{\small{Mason del Rosario}}
+\institute{\LaTeX 101}
+\date{September 2021} %\today
+
+\begin{document}
+% \bibliographystyle{ieeetr}
+% \nobibliography*{refs}
+
+
+{\setbeamertemplate{footline}{} 
+\frame{\titlepage}}
+
+\section*{Outline}\begin{frame}{Outline}\tableofcontents\end{frame}
+
+\section{Introduction}
+
+  % Introduction section frame 
+  \begin{frame}[plain]
+    \vfill
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{Background}
+      \usebeamerfont{title}\insertsectionhead\par%
+      \color{davisblue}\noindent\rule{10cm}{1pt} \\
+      \footnotesize{Course Background}
+    \end{beamercolorbox}
+    \vfill
+  \end{frame}
+  
+\subsection{Course Background}
+
+  \begin{frame}{Course Background}
+    \begin{itemize} 
+      \item \textbf{Inspiration} -- https://www.learnlatex.org/. 
+      \item \textbf{Slides Available} -- https://github.com/mdelrosa/latex-101.
+      \begin{itemize}
+        \item Template based on \href{https://www.overleaf.com/latex/templates/oxpav/xnjgrxthvjhg}{Clara Pavillet's Oxford Template}
+      \end{itemize}
+      \item \textbf{Slack back channel}
+      \begin{itemize}
+        \item https://join.slack.com/share/zt-ul82okyc-SI2GftuwPx_lFyBXll9rjw
+      \end{itemize}
+    \end{itemize}
+  \end{frame}
+
+\subsection{What is \LaTeX?}
+
+  \begin{frame}{What is \LaTeX?}
+    \textbf{Markup Language} -- Instructions for rendering a document.
+    \begin{itemize}
+      \item E.g., HTML (websites), Markdown (Github repos), SVG (vector graphics)
+    \end{itemize}
+  \end{frame}
+
+\end{document}
