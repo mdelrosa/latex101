@@ -18,8 +18,18 @@
 \headcommand {\beamer@subsectionentry {0}{2}{2}{5}{What is \LaTeX ?}}
 \headcommand {\slideentry {2}{2}{1}{5/5}{What is \LaTeX ?}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\beamer@partpages {1}{5}}
-\headcommand {\beamer@subsectionpages {5}{5}}
-\headcommand {\beamer@sectionpages {3}{5}}
-\headcommand {\beamer@documentpages {5}}
-\headcommand {\gdef \inserttotalframenumber {5}}
+\headcommand {\slideentry {2}{2}{2}{6/6}{What is \LaTeX ?}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\slideentry {2}{2}{3}{7/7}{What is \LaTeX ?}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {2}{2}{4}{8/8}{What is \LaTeX ?}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\slideentry {2}{2}{5}{9/9}{What is \LaTeX ?}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {2}{2}{6}{10/12}{What is \LaTeX ?}{0}}
+\headcommand {\beamer@framepages {10}{12}}
+\headcommand {\beamer@partpages {1}{12}}
+\headcommand {\beamer@subsectionpages {1}{12}}
+\headcommand {\beamer@sectionpages {1}{12}}
+\headcommand {\beamer@documentpages {12}}
+\headcommand {\gdef \inserttotalframenumber {10}}
