@@ -2,12 +2,12 @@
 
 # Overleaf Modules
 
-- Day 1. [Introduction, Document Classes](https://overleaf.com/) **TODO**
-	- Slides (https://github.com/mdelrosa/latex101/day01/presentation.pdf)
+- Day 1. Introduction, Document Classes, Basic Environments **TODO**
+	- [Slides](https://github.com/mdelrosa/latex101/blob/master/day01/presentation.pdf)
 	- Overleaf (**TODO**)
-- Day 2. [Images](https://overleaf.com/)
+- Day 2. Figures, Tables
 	- Slides (**TODO**)
 	- Overleaf (**TODO**)
-- Day 3. [Templates (CV, Beamer)](https://overleaf.com/)
+- Day 3. Templates (CV, Beamer), Moving Forward
 	- Slides (**TODO**)
 	- Overleaf (**TODO**)
