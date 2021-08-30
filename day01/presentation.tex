@@ -15,6 +15,11 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
+% for manual multicolumns
+\usepackage{multicol}
+\setlength{\columnseprule}{1pt}
+\def\columnseprulecolor{\color{black}}
+
 \graphicspath{ {images/} }
 
 \nobibliography*
@@ -49,7 +54,7 @@
     \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{Background}
       \usebeamerfont{title}\insertsectionhead\par%
       \color{davisblue}\noindent\rule{10cm}{1pt} \\
-      \footnotesize{Course Background}
+      \footnotesize{Course Background, What is \LaTeX?}
     \end{beamercolorbox}
     \vfill
   \end{frame}
@@ -59,6 +64,11 @@
   \begin{frame}{Course Background}
     \begin{itemize} 
       \item \textbf{Inspiration} -- https://www.learnlatex.org/. 
+        \begin{itemize}
+          \item Day 1 -- \texttt{learnlatex.org} lessons 1-8.
+          \item Day 2 -- \texttt{learnlatex.org} lessons 9-16.
+          \item Day 3 -- Inkscape for graphics with embedded \LaTeX. Specific templates (resume, presentations).
+        \end{itemize}
       \item \textbf{Slides Available} -- https://github.com/mdelrosa/latex-101.
       \begin{itemize}
         \item Template based on \href{https://www.overleaf.com/latex/templates/oxpav/xnjgrxthvjhg}{Clara Pavillet's Oxford Template}
@@ -138,20 +148,558 @@
     \end{figure}
   \end{frame}
 
-  \begin{frame}{\LaTeX in this course}
+  \begin{frame}{\LaTeX\;in this course}
     \begin{itemize}
       \item Editors/systems installed on local device (faster, private)
       \pause
       \item Editor/systems online (convenient, collaborative)
       \pause
-      \item Will use \textbf{Overleaf} for this course.
+      \item Will use \textbf{Overleaf} for this course (free account required)
     \end{itemize}
     \begin{figure}
       \includegraphics[width=0.6\linewidth]{overleaf.png}
     \end{figure}
   \end{frame}
 
-  \section{\LaTeX Document Structure}
+  \begin{frame}{Our First \LaTeX\;Project}
+  \begin{enumerate}
+    \item Make an Overleaf account (free!)
+    \item Go to \texttt{https://www.overleaf.com/project}
+    \item Create a blank project and pick a project name
+  \end{enumerate}
+    \begin{figure}
+      \includegraphics[width=0.3\linewidth]{day01-overleaf-00.png}
+    \end{figure}
+  \end{frame}
+
+  \begin{frame}{Our First \LaTeX\;Project}
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-01.png}
+      \caption{Result of creating new project on Overleaf}
+      \label{fig:day01-overleaf-01}
+    \end{figure}
+  \end{frame}
+
+  \section{Document Structure}
+
+  % Document structure section frame 
+  \begin{frame}[plain]
+    \vfill
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{Document Structure}
+      \usebeamerfont{title}\insertsectionhead\par%
+      \color{davisblue}\noindent\rule{10cm}{1pt} \\
+      \footnotesize{Commands, Environments, Errors}
+    \end{beamercolorbox}
+    \vfill
+  \end{frame}
+
+  \begin{frame}{Commands/Arguments}
+    \LaTeX\;has special characters to define \underline{commands} and \underline{arguments}.
+    \begin{itemize}
+      \item Backslashes (\texttt{\textbackslash}) = start of a commands
+      \item Curly brackets (\texttt{\{\}}) = mandatory arguments (i.e., inputs to commands)
+      \item Square brackets (\texttt{[]}) = optional arguments
+    \end{itemize}
+  \end{frame}
+
+  \nofoot{
+  \begin{frame}{Backslashes/Commands}
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-01-docenc.png}
+      \caption{Commands/arguments defining the document class and text encoding of our project.}
+      \label{fig:day01-overleaf-01-docenc}
+    \end{figure}
+  \end{frame}
+  }
+
+  \nofoot{
+  \begin{frame}{Backslashes/Commands}
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-01-title.png}
+      \caption{Commands/arguments defining the title in our project.}
+      \label{fig:day01-overleaf-01-title}
+    \end{figure}
+  \end{frame}
+  }
+
+  \nofoot{
+  \begin{frame}{Environments}
+    Environments = \texttt{\textbackslash begin\{...\}} and \texttt{\textbackslash end\{...\}} commands.
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-02.png}
+      \caption{Every \LaTeX\;file includes a \texttt{document} environment.}
+      \label{fig:day01-overleaf-02}
+    \end{figure}
+  \end{frame}
+  }
+
+  % equation
+  \nofoot{
+  \begin{frame}{Environments}
+    Lots of different environments! Will go over more in this course.
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-03.png}
+      \caption{Try writing an \texttt{equation} environment!}
+      \label{fig:day01-overleaf-02}
+    \end{figure}
+  \end{frame}
+  }
+
+  % error - remove command to produce the error
+  \nofoot{
+  \begin{frame}{Errors}
+    \begin{itemize}
+      \item What happens when we mess up?
+      \item Remove the \texttt{\textbackslash end\{equation\}} command, compile the document.
+    \end{itemize}
+    \pause 
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-04-remove.png}
+      \caption{Click on the \textcolor{red}{red badge} to reveal more details.}
+      \label{fig:day01-overleaf-04-remove}
+    \end{figure}
+  \end{frame}
+  }
+
+  % error - details
+  \nofoot{
+  \begin{frame}{Errors}
+    Some errors might be sneakier. Google is your friend!
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-04-error.png}
+      \caption{Compiler has returned an \textcolor{red}{error}.}
+      \label{fig:day01-overleaf-04-error}
+    \end{figure}
+  \end{frame}
+  }
+
+  \begin{frame}{Exercise: Text and Whitespace}
+    \begin{itemize}
+      \item Try adding text to your first document, typesetting and seeing the changes in your PDF.
+      \item Make some different paragraphs and add variable spaces.
+      \item Explore how your editor works; click on your source and find how to go to the same line in your PDF.
+      \item Share your observations/questions in chat!
+    \end{itemize}
+  \end{frame}
+
+  \section{Logical structure}
+
+  % Logical structure section frame 
+  \begin{frame}[plain]
+    \vfill
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{Background}
+      \usebeamerfont{title}\insertsectionhead\par%
+      \color{davisblue}\noindent\rule{10cm}{1pt} \\
+      \footnotesize{Text formatting, sectioning, lists}
+    \end{beamercolorbox}
+    \vfill
+  \end{frame}
+
+  \begin{frame}{Text Formatting}
+    Some common commands for formatting text:
+    \begin{itemize}
+      \item \texttt{\textbackslash textbf}: \textbf{Make text boldface.}
+      \item \texttt{\textbackslash textit}: \textit{Make text italic.}
+      \item \texttt{\textbackslash underline}: \underline{Underline text.}
+      \item \texttt{\textbackslash texttt}: \texttt{Make text resemble typewriter.}
+      \item And so many more! For example, see \texttt{https://latex-tutorial.com/changing-font-style/}.
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Sectioning commands}
+    \LaTeX\; provides commands to generate section/subsection headings. 
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-05-sections.png}
+      \caption{Numbers for different (sub)sections are automatically generated.}
+      \label{fig:day01-overleaf-05-sections}
+    \end{figure}
+  \end{frame}
+
+  \begin{frame}{Sectioning commands}
+    Different section levels available:
+    \begin{itemize}
+      \item \texttt{\textbackslash chapter} (for \texttt{\textbackslash documentclass\{book\}}, \texttt{\textbackslash documentclass\{report\}})
+      \item \texttt{\textbackslash section}
+      \item \texttt{\textbackslash subsection}
+      \item \texttt{\textbackslash subsubsection}
+      \item \texttt{\textbackslash paragraph} (rarely used!)
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Lists}
+    \begin{multicols}{2}
+    [\centering Lists in \LaTeX can be unordered or ordered:]
+      \begin{itemize}
+        \item First unordered item
+        \item Second unordered item
+        \item Third unordered item
+      \end{itemize}
+      \columnbreak
+      \begin{enumerate}
+        \item First ordered item
+        \item Second ordered item
+        \item Third ordered item
+      \end{enumerate}
+    \end{multicols}
+  \end{frame}
+
+  \begin{frame}{Sectioning commands}
+    List commands: \texttt{itemize/enumerate} environments + \texttt{\textbackslash item} commands per each line.
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-06-lists.png}
+      \caption{Numbers for different (sub)sections are automatically generated.}
+      \label{fig:day01-overleaf-06-lists}
+    \end{figure}
+  \end{frame}
+
+  \begin{frame}{Exercises}
+  \begin{itemize}
+    \item Experiment with different sectioning levels. Try using \texttt{\textbackslash documentclass\{report\}} instead of \texttt{\textbackslash documentclass\{article\}} and adding \texttt{\textbackslash chapter} commands. How do they look?
+    \item Try out \texttt{\textbackslash paragraph} and (even) \texttt{\textbackslash subparagraph} to see they work: by default, they don’t add numbers.
+    \item Make some lists, and nest one list inside another. How does the format of the numbers or markers change? You can only go to four levels with standard \LaTeX, but more than four nested lists tends to be a bad sign anyway!
+  \end{itemize}
+  \end{frame}
+
+  \section{Document Classes}
+  % Logical structure section frame 
+
+  \begin{frame}[plain]
+    \vfill
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{Document Classes}
+      \usebeamerfont{title}\insertsectionhead\par%
+      \color{davisblue}\noindent\rule{10cm}{1pt} \\
+      \footnotesize{Base classes, function-rich classes(?), presentations}
+    \end{beamercolorbox}
+    \vfill
+  \end{frame}
+
+  \begin{frame}{What \texttt{\textbackslash documentclass} does}
+    Controls general layout of document, changing:
+    \begin{itemize}
+      \item Design (margins, fonts, spacing, etc.)
+      \item Sectioning (e.g., \texttt{\textbackslash chapter})
+      \item Title location (top of page vs. separate page)
+      \item Add new commands (e.g., \texttt{frame} environments for slides)
+    \end{itemize}
+    \pause
+    Can manually set global options (i.e., \texttt{\textbackslash documentclass[<options>]\{<name>\}}).
+  \end{frame}
+  
+  \begin{frame}{Chapters}
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-07A-article.png}
+      \caption{Our starter project is an \texttt{article} class.}
+      \label{fig:day01-overleaf-07A}
+    \end{figure}
+  \end{frame}
+
+  \begin{frame}{Chapters}
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-07B-chapter-error.png}
+      \caption{Adding a \texttt{\textbackslash chapter} section causes an error.}
+      \label{fig:day01-overleaf-07B}
+    \end{figure}
+  \end{frame}
+
+  \begin{frame}{Chapters}
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-07C-chapter-fix.png}
+      \caption{Changing to \texttt{\textbackslash documentclass\{book\}} enables \texttt{\textbackslash chapter}.}
+      \label{fig:day01-overleaf-07C}
+    \end{figure}
+  \end{frame}
+
+  \begin{frame}{Base classes}
+    Default \texttt{\textbackslash documentclass}es provided by \LaTeX:
+    \begin{itemize}
+      \item \texttt{article} - short documents without chapters
+      \item \texttt{report} - longer documents with chapters, single-sided printing
+      \item \texttt{book} - longer documents with chapters, double-sided printing, front-/back-matter (e.g., index)
+      \item \texttt{letter} - correspondence with no sections
+      \item \texttt{slides} - for presentations (not used in practice; will explain!)
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Exercises}
+    \begin{itemize}
+      \item Explore changing the document class between base classes, the KOMA bundle and memoir. How do these affect the appearance of the document?
+      \item Using the square brackets (\texttt{[]}), add the option \texttt{twocolumn}. How does this affect the layout of the document?
+    \end{itemize}
+  \end{frame}
+
+  \section{Packages and Definitions}
+  % Packages and definitions 
+
+  \begin{frame}[plain]
+    \vfill
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{Extending LaTeX}
+      \usebeamerfont{title}\insertsectionhead\par%
+      \color{davisblue}\noindent\rule{10cm}{1pt} \\
+      \footnotesize{Packages and definitions}
+    \end{beamercolorbox}
+    \vfill
+  \end{frame}
+
+  \begin{frame}{Packages}
+    Base \LaTeX doesn't do everything. \underline{Packages} add more functionality, including:
+    \begin{itemize}
+      \item Change how parts of \LaTeX work
+      \item Add new commands (e.g. \texttt{\textbackslash lipsum} package for filler text)
+      \item Change document design
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Packages}
+    \textbf{Example: \texttt{babel}} -- rule sets for different languages.%\footnote[]More here: \url{https://www.learnlatex.org/en/more-06#the-babel-package}
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-08A-package-geom.png}
+      \caption{\texttt{babel} package with french option changes hyphenation.}
+      \label{fig:day01-overleaf-08A}
+    \end{figure}
+  \end{frame}
+
+  \begin{frame}{Packages}
+    \textbf{Example: \texttt{babel}} -- rule sets for different languages.%\footnote[]More here: \url{https://www.learnlatex.org/en/more-06#the-babel-package}
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-08B-package-babel.png}
+      \caption{\texttt{babel} package with french option changes hyphenation.}
+      \label{fig:day01-overleaf-08B}
+    \end{figure}
+    % \footnotetext[1]{More here: \url{https://www.learnlatex.org/en/more-06#the-babel-package}}    
+  \end{frame}
+
+  \begin{frame}{Packages}
+    \textbf{Example: \texttt{geometry}} -- enables direct control of margins, borders, line spacing, etc.
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-08C-package-geom-redux.png}
+      \caption{\texttt{geometry} package with 1" page margins.}
+      \label{fig:day01-overleaf-08C}
+    \end{figure}
+  \end{frame}
+
+  \begin{frame}{Packages}
+    \textbf{Example: \texttt{geometry}} -- enables direct control of margins, borders, line spacing, etc.
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-08D-package-geom-redux.png}
+      \caption{\texttt{geometry} package with 2" page margins.}
+      \label{fig:day01-overleaf-08D}
+    \end{figure}
+  \end{frame}
+
+  \begin{frame}{Definitions}
+    Can't find a command you want? Want to avoid repeating yourself? 
+
+    Use definitions to define your own commands!
+  \end{frame}
+
+  \begin{frame}{Definitions}
+    Line 6 \texttt{\textbackslash newcommand} defines a \texttt{\textbackslash kw} command.
+    \begin{itemize}
+      \item \texttt{\textbackslash newcommand\textbackslash kw} $\to$ assign \texttt{kw} as command name
+      \item \texttt{[1]} $\to$ number of arguments
+      \item \texttt{\#1} $\to$ first argument supplied to command
+    \end{itemize}
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-09A-defn.png}
+      \caption{A definition for a custom `keyword' command \texttt{\textbackslash kw}.}
+      \label{fig:day01-overleaf-09A}
+    \end{figure}
+  \end{frame}
+
+  \section{Figures}
+
+  \begin{frame}[plain]
+    \vfill
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{Graphics}
+      \usebeamerfont{title}\insertsectionhead\par%
+      \color{davisblue}\noindent\rule{10cm}{1pt} \\
+      \footnotesize{Including images, resizing, positioning}
+    \end{beamercolorbox}
+    \vfill
+  \end{frame}
+
+  \begin{frame}{\texttt{graphicx} package}
+    The \texttt{graphicx} package provides the \texttt{\textbackslash includegraphics} command.
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-10A-graphic.png}
+      \caption{\texttt{example-image} is provided by default in most \LaTeX distributions.}
+      \label{fig:day01-overleaf-10A}
+    \end{figure}
+  \end{frame}
+
+  \nofoot{
+  \begin{frame}{Scaling Images}
+    \begin{itemize} 
+      \item \texttt{\textbackslash includegraphics} takes optional arguments for scaling
+      \item Common commands: \texttt{\textbackslash textheight}, \texttt{\textbackslash textwidth}
+    \end{itemize}
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-10B-graphic.png}
+      \caption{Optional arguments to change \texttt{width} and \texttt{height} of graphics.}
+      \label{fig:day01-overleaf-10B}
+    \end{figure}
+  \end{frame}
+  }
+
+  \nofoot{
+  \begin{frame}{Clipping, Rotating Images}
+    \texttt{\textbackslash includegraphics} takes optional arguments for clipping and rotating
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-10C-graphic.png}
+      \caption{Optional arguments \texttt{clip}, \texttt{trim}, and \texttt{angle}.}
+      \label{fig:day01-overleaf-10C}
+    \end{figure}
+  \end{frame}
+  }
+
+  \nofoot{
+  \begin{frame}{Floats}
+    Including images can lead to large gaps in text.
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-10D-graphic.png}
+      \caption{\texttt{\textbackslash includegraphics} causing a gap on Page 1}.
+      \label{fig:day01-overleaf-10D}
+    \end{figure}
+  \end{frame}
+  }
+
+  \nofoot{
+  \begin{frame}{Floats}
+    \underline{Floats} - an image environment (e.g., \texttt{figure}) that dynamically adjusts its position.
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-10E-graphic-float.png}
+      \caption{\texttt{figure} environment causes text to wrap properly}.
+      \label{fig:day01-overleaf-10E}
+    \end{figure}
+  \end{frame}
+  }
+
+  \nofoot{
+  \begin{frame}{Floats}
+    Optional arguments \texttt{[h]}ere, \texttt{[t]}op, \texttt{[b]}ottom, \texttt{[p]}age control float placement.
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-10F-graphic-float.png}
+      \caption{\texttt{figure} with \texttt{[hb]} optional argument placed on bottom of page}.
+      \label{fig:day01-overleaf-10F}
+    \end{figure}
+  \end{frame}
+  }
+
+  \section{Tables}
+
+  \begin{frame}[plain]
+    \vfill
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{Tables}
+      \usebeamerfont{title}\insertsectionhead\par%
+      \color{davisblue}\noindent\rule{10cm}{1pt} \\
+      \footnotesize{Including images, resizing, positioning}
+    \end{beamercolorbox}
+    \vfill
+  \end{frame}
+
+  \begin{frame}{\texttt{array} package}
+    The \texttt{array} package provides commands for tables.
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-11A-table.png}
+      \caption{A \texttt{tabular} environment provided by \texttt{array} packages.}
+      \label{fig:day01-overleaf-11A}
+    \end{figure}
+  \end{frame}
+
+  \begin{frame}{Aligning Columns}
+    Argument to \texttt{tabular} changes alignment -- \texttt{\{l\}}eft, \texttt{\{c\}}enter, \texttt{\{r\}}ight.
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-11B-table-align.png}
+      \caption{Same table with left, center, and right (\texttt{\{lcr\}}) column alignments.}
+      \label{fig:day01-overleaf-11B}
+    \end{figure}
+  \end{frame}
+
+  \begin{frame}{Paragraph Columns}
+    (\texttt{\{lcr\}}) columns will typeset into single row, even if they are wider than the page.
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-11C-table-overflow.png}
+      \caption{A runaway \texttt{l} column.}
+      \label{fig:day01-overleaf-11C}
+    \end{figure}
+  \end{frame}
+
+  \begin{frame}{Paragraph Columns}
+    (\texttt{\{p\}}) columns are forced to a given width.
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-11D-table-overflow.png}
+      \caption{Same text in a \texttt{p} column with wrapped text.}
+      \label{fig:day01-overleaf-11D}
+    \end{figure}
+  \end{frame}
+
+  \begin{frame}{Adding rules}
+    Rules (lines) are enabled with the \texttt{booktabs} package.
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-11E-table-rule.png}
+      % \caption{}
+      % \label{fig:day01-overleaf-11E}
+    \end{figure}
+  \end{frame}
+
+  \begin{frame}{Adding rules}
+    \texttt{\textbackslash cmidrule} spans a subset of columns.
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-11F-table-cmidrule.png}
+    \end{figure}
+  \end{frame}
+
+  \begin{frame}{Adding line space}
+    \texttt{\textbackslash addlinespace} useful for more subtle separation.
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-11G-table-linespace.png}
+    \end{figure}
+  \end{frame}
+
+  \begin{frame}{Merging cells}
+    \texttt{\textbackslash multicolumn} creates cells spanning multiple columns. Arguments include:
+    \begin{enumerate}
+      \item Number of columns cell spans
+      \item Alignment of cell
+      \item Contents of cell
+    \end{enumerate}
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-11H-table-merge.png}
+    \end{figure}
+  \end{frame}
+
+  \begin{frame}{Merging cells vertically}
+    No support for vertical merging. Workaround: use blank cells!
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day01-overleaf-11I-table-vertmerge.png}
+    \end{figure}
+  \end{frame}
+
+  \nofoot{
+  \begin{frame}{Table Generation}
+    Useful utility for table creation: \url{https://www.tablesgenerator.com/}.
+    \begin{figure}
+      \includegraphics[width=0.6\linewidth]{day01-overleaf-12A-table-creation.png}
+      \caption{Generate code for table based on WYSIWYG editor.}
+      \label{fig:day01-overleaf-12A}
+    \end{figure}
+  \end{frame}
+  }
+
+\begin{frame}{End of Day 01}
+  \begin{itemize}
+    \item Finished Lessons 1-8 from \texttt{learnlatex.org}
+    \item Tomorrow: Lessons 9-16 from \texttt{learnlatex.org}
+    \item Questions? Ask on the Slack channel! (\#latex101)
+  \end{itemize}
+\end{frame}
 
 } %end footnotsize
+
 \end{document}
