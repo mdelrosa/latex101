@@ -1,0 +1,101 @@
+% presentation.tex
+
+% Editing Author: Mason del Rosario 
+% Description: A modified version of Pavillet's Oxonion template for UC Davis
+
+% Copyright 2019 Clara Eleonore Pavillet
+
+% Original Author: Clara Eleonore Pavillet
+% Description: This is an unofficial Oxford University Beamer Template I made from scratch. Feel free to use it, modify it, share it.
+% Version: 1.0
+
+\documentclass{beamer}
+\setbeamertemplate{caption}[numbered]
+\usepackage{import} % for some reason, this doesn't work when called in sty file
+\input{Theme/Packages.tex}
+\usepackage{bibentry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{footer} % footer.sty for nofoot, blfootnote commands
+
+\usetheme{oxonian}
+\nobibliography* % enables bibentry command in blfootnote commands
+
+\title{Presentation Title }
+\titlegraphic{\includegraphics[width=3cm]{Theme/Logos/DavisLogoV1.png}}
+\author{\small{Author Name}}
+\institute{UC Davis}
+\date{\today} %\today
+
+\begin{document}
+
+\footnotesize{
+{\setbeamertemplate{footline}{} 
+\frame{\titlepage}}
+
+\section*{Outline}
+
+% Example outline frame; renders sections, subsections, etc.
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+  % Example frame for introducing a section 
+  \begin{frame}[plain]
+    \vfill
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{}
+      \usebeamerfont{title}\insertsectionhead\par%
+      \color{davisblue}\noindent\rule{10cm}{1pt} \\
+      \footnotesize{Section subtitle}
+    \end{beamercolorbox}
+    \vfill
+  \end{frame}
+  
+\subsection{Images}
+
+  \begin{frame}{Example Image}
+    \begin{figure}
+      \includegraphics[width=0.7\linewidth]{example-image}
+      \caption{\texttt{example-image} is provided by default in most \LaTeX distributions.}
+      \label{fig:example}
+    \end{figure}
+  \end{frame}
+
+  % nofoot = suppresses the footer bar/badge.
+  %          provides more space in a given frame.
+  \nofoot{
+  \begin{frame}{Example Image (no Footer)}
+    \begin{figure}
+      \includegraphics[width=0.8\linewidth]{example-image}
+      \caption{\texttt{example-image} with footer suppressed.}
+      \label{fig:example-nofoot}
+    \end{figure}
+  \end{frame}
+  }
+
+\subsection{Citations}
+
+  % blfootnote = make space for in-frame references to complement citations
+  %              wrapper for bibentry command; use with frame surrounded by nofoot command
+  \nofoot{
+  \begin{frame}{Example Image (no Footer)}
+    An example of a citation \cite{ref:oetiker1995not} and a footnote reference.
+    \blfootnote{\bibentry{ref:oetiker1995not}}
+  \end{frame}
+  }
+
+\section*{References}
+
+  % references slide
+  \nofoot{
+  \begin{frame}{References}
+    \setbeamertemplate{bibliography item}[text]
+    \bibliographystyle{ieeetr}
+    \bibliography{refs}
+  \end{frame}
+  }
+
+\end{document}
