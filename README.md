@@ -32,6 +32,7 @@ On Day 3, I will cover how to generate figures with embedded LaTeX, which requir
 - [Comprehensive TeX Archive Network (CTAN)](https://www.ctan.org/)
 	- [Symbols list](https://www.ctan.org/tex-archive/info/symbols/comprehensive/) (check pdfs at bottom of page)
 - [Detexify](http://detexify.kirelabs.org/classify.html) - Draw a symbol and see the corresponding LaTeX command.
+- [Tables Generator](https://www.tablesgenerator.com/) - Draw a table with WYSIWYG interface, get the LaTeX code for it.
 - LaTeX Forums -- Other places you can go for help
 	- \#latex101, \#latex channels on [UC Davis Slack](https://ucdavis.slack.com/) (UC Davis only)
 	- [r/latex](https://www.reddit.com/r/LaTeX/)
