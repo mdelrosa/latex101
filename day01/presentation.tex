@@ -20,7 +20,7 @@
 \setlength{\columnseprule}{1pt}
 \def\columnseprulecolor{\color{black}}
 
-\graphicspath{ {images/} }
+\graphicspath{ {../images/} }
 
 \nobibliography*
 % \usepackage[perpage]{footmisc}
@@ -65,8 +65,8 @@
     \begin{itemize} 
       \item \textbf{Inspiration} -- https://www.learnlatex.org/. 
         \begin{itemize}
-          \item Day 1 -- \texttt{learnlatex.org} lessons 1-8.
-          \item Day 2 -- \texttt{learnlatex.org} lessons 9-16.
+          \item Day 1 -- \texttt{learnlatex.org} lessons 1-6.
+          \item Day 2 -- \texttt{learnlatex.org} lessons 7-12.
           \item Day 3 -- Inkscape for graphics with embedded \LaTeX. Specific templates (resume, presentations).
         \end{itemize}
       \item \textbf{Slides Available} -- https://github.com/mdelrosa/latex-101.
@@ -510,192 +510,192 @@
     \end{figure}
   \end{frame}
 
-  \section{Figures}
+  % \section{Figures}
 
-  \begin{frame}[plain]
-    \vfill
-    \centering
-    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{Graphics}
-      \usebeamerfont{title}\insertsectionhead\par%
-      \color{davisblue}\noindent\rule{10cm}{1pt} \\
-      \footnotesize{Including images, resizing, positioning}
-    \end{beamercolorbox}
-    \vfill
-  \end{frame}
+  % \begin{frame}[plain]
+  %   \vfill
+  %   \centering
+  %   \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{Graphics}
+  %     \usebeamerfont{title}\insertsectionhead\par%
+  %     \color{davisblue}\noindent\rule{10cm}{1pt} \\
+  %     \footnotesize{Including images, resizing, positioning}
+  %   \end{beamercolorbox}
+  %   \vfill
+  % \end{frame}
 
-  \begin{frame}{\texttt{graphicx} package}
-    The \texttt{graphicx} package provides the \texttt{\textbackslash includegraphics} command.
-    \begin{figure}
-      \includegraphics[width=0.9\linewidth]{day01-overleaf-10A-graphic.png}
-      \caption{\texttt{example-image} is provided by default in most \LaTeX distributions.}
-      \label{fig:day01-overleaf-10A}
-    \end{figure}
-  \end{frame}
+  % \begin{frame}{\texttt{graphicx} package}
+  %   The \texttt{graphicx} package provides the \texttt{\textbackslash includegraphics} command.
+  %   \begin{figure}
+  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-10A-graphic.png}
+  %     \caption{\texttt{example-image} is provided by default in most \LaTeX distributions.}
+  %     \label{fig:day01-overleaf-10A}
+  %   \end{figure}
+  % \end{frame}
 
-  \nofoot{
-  \begin{frame}{Scaling Images}
-    \begin{itemize} 
-      \item \texttt{\textbackslash includegraphics} takes optional arguments for scaling
-      \item Common commands: \texttt{\textbackslash textheight}, \texttt{\textbackslash textwidth}
-    \end{itemize}
-    \begin{figure}
-      \includegraphics[width=0.9\linewidth]{day01-overleaf-10B-graphic.png}
-      \caption{Optional arguments to change \texttt{width} and \texttt{height} of graphics.}
-      \label{fig:day01-overleaf-10B}
-    \end{figure}
-  \end{frame}
-  }
+  % \nofoot{
+  % \begin{frame}{Scaling Images}
+  %   \begin{itemize} 
+  %     \item \texttt{\textbackslash includegraphics} takes optional arguments for scaling
+  %     \item Common commands: \texttt{\textbackslash textheight}, \texttt{\textbackslash textwidth}
+  %   \end{itemize}
+  %   \begin{figure}
+  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-10B-graphic.png}
+  %     \caption{Optional arguments to change \texttt{width} and \texttt{height} of graphics.}
+  %     \label{fig:day01-overleaf-10B}
+  %   \end{figure}
+  % \end{frame}
+  % }
 
-  \nofoot{
-  \begin{frame}{Clipping, Rotating Images}
-    \texttt{\textbackslash includegraphics} takes optional arguments for clipping and rotating
-    \begin{figure}
-      \includegraphics[width=0.9\linewidth]{day01-overleaf-10C-graphic.png}
-      \caption{Optional arguments \texttt{clip}, \texttt{trim}, and \texttt{angle}.}
-      \label{fig:day01-overleaf-10C}
-    \end{figure}
-  \end{frame}
-  }
+  % \nofoot{
+  % \begin{frame}{Clipping, Rotating Images}
+  %   \texttt{\textbackslash includegraphics} takes optional arguments for clipping and rotating
+  %   \begin{figure}
+  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-10C-graphic.png}
+  %     \caption{Optional arguments \texttt{clip}, \texttt{trim}, and \texttt{angle}.}
+  %     \label{fig:day01-overleaf-10C}
+  %   \end{figure}
+  % \end{frame}
+  % }
 
-  \nofoot{
-  \begin{frame}{Floats}
-    Including images can lead to large gaps in text.
-    \begin{figure}
-      \includegraphics[width=0.9\linewidth]{day01-overleaf-10D-graphic.png}
-      \caption{\texttt{\textbackslash includegraphics} causing a gap on Page 1}.
-      \label{fig:day01-overleaf-10D}
-    \end{figure}
-  \end{frame}
-  }
+  % \nofoot{
+  % \begin{frame}{Floats}
+  %   Including images can lead to large gaps in text.
+  %   \begin{figure}
+  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-10D-graphic.png}
+  %     \caption{\texttt{\textbackslash includegraphics} causing a gap on Page 1}.
+  %     \label{fig:day01-overleaf-10D}
+  %   \end{figure}
+  % \end{frame}
+  % }
 
-  \nofoot{
-  \begin{frame}{Floats}
-    \underline{Floats} - an image environment (e.g., \texttt{figure}) that dynamically adjusts its position.
-    \begin{figure}
-      \includegraphics[width=0.9\linewidth]{day01-overleaf-10E-graphic-float.png}
-      \caption{\texttt{figure} environment causes text to wrap properly}.
-      \label{fig:day01-overleaf-10E}
-    \end{figure}
-  \end{frame}
-  }
+  % \nofoot{
+  % \begin{frame}{Floats}
+  %   \underline{Floats} - an image environment (e.g., \texttt{figure}) that dynamically adjusts its position.
+  %   \begin{figure}
+  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-10E-graphic-float.png}
+  %     \caption{\texttt{figure} environment causes text to wrap properly}.
+  %     \label{fig:day01-overleaf-10E}
+  %   \end{figure}
+  % \end{frame}
+  % }
 
-  \nofoot{
-  \begin{frame}{Floats}
-    Optional arguments \texttt{[h]}ere, \texttt{[t]}op, \texttt{[b]}ottom, \texttt{[p]}age control float placement.
-    \begin{figure}
-      \includegraphics[width=0.9\linewidth]{day01-overleaf-10F-graphic-float.png}
-      \caption{\texttt{figure} with \texttt{[hb]} optional argument placed on bottom of page}.
-      \label{fig:day01-overleaf-10F}
-    \end{figure}
-  \end{frame}
-  }
+  % \nofoot{
+  % \begin{frame}{Floats}
+  %   Optional arguments \texttt{[h]}ere, \texttt{[t]}op, \texttt{[b]}ottom, \texttt{[p]}age control float placement.
+  %   \begin{figure}
+  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-10F-graphic-float.png}
+  %     \caption{\texttt{figure} with \texttt{[hb]} optional argument placed on bottom of page}.
+  %     \label{fig:day01-overleaf-10F}
+  %   \end{figure}
+  % \end{frame}
+  % }
 
-  \section{Tables}
+  % \section{Tables}
 
-  \begin{frame}[plain]
-    \vfill
-    \centering
-    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{Tables}
-      \usebeamerfont{title}\insertsectionhead\par%
-      \color{davisblue}\noindent\rule{10cm}{1pt} \\
-      \footnotesize{Including images, resizing, positioning}
-    \end{beamercolorbox}
-    \vfill
-  \end{frame}
+  % \begin{frame}[plain]
+  %   \vfill
+  %   \centering
+  %   \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{Tables}
+  %     \usebeamerfont{title}\insertsectionhead\par%
+  %     \color{davisblue}\noindent\rule{10cm}{1pt} \\
+  %     \footnotesize{Including images, resizing, positioning}
+  %   \end{beamercolorbox}
+  %   \vfill
+  % \end{frame}
 
-  \begin{frame}{\texttt{array} package}
-    The \texttt{array} package provides commands for tables.
-    \begin{figure}
-      \includegraphics[width=0.9\linewidth]{day01-overleaf-11A-table.png}
-      \caption{A \texttt{tabular} environment provided by \texttt{array} packages.}
-      \label{fig:day01-overleaf-11A}
-    \end{figure}
-  \end{frame}
+  % \begin{frame}{\texttt{array} package}
+  %   The \texttt{array} package provides commands for tables.
+  %   \begin{figure}
+  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-11A-table.png}
+  %     \caption{A \texttt{tabular} environment provided by \texttt{array} packages.}
+  %     \label{fig:day01-overleaf-11A}
+  %   \end{figure}
+  % \end{frame}
 
-  \begin{frame}{Aligning Columns}
-    Argument to \texttt{tabular} changes alignment -- \texttt{\{l\}}eft, \texttt{\{c\}}enter, \texttt{\{r\}}ight.
-    \begin{figure}
-      \includegraphics[width=0.9\linewidth]{day01-overleaf-11B-table-align.png}
-      \caption{Same table with left, center, and right (\texttt{\{lcr\}}) column alignments.}
-      \label{fig:day01-overleaf-11B}
-    \end{figure}
-  \end{frame}
+  % \begin{frame}{Aligning Columns}
+  %   Argument to \texttt{tabular} changes alignment -- \texttt{\{l\}}eft, \texttt{\{c\}}enter, \texttt{\{r\}}ight.
+  %   \begin{figure}
+  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-11B-table-align.png}
+  %     \caption{Same table with left, center, and right (\texttt{\{lcr\}}) column alignments.}
+  %     \label{fig:day01-overleaf-11B}
+  %   \end{figure}
+  % \end{frame}
 
-  \begin{frame}{Paragraph Columns}
-    (\texttt{\{lcr\}}) columns will typeset into single row, even if they are wider than the page.
-    \begin{figure}
-      \includegraphics[width=0.9\linewidth]{day01-overleaf-11C-table-overflow.png}
-      \caption{A runaway \texttt{l} column.}
-      \label{fig:day01-overleaf-11C}
-    \end{figure}
-  \end{frame}
+  % \begin{frame}{Paragraph Columns}
+  %   (\texttt{\{lcr\}}) columns will typeset into single row, even if they are wider than the page.
+  %   \begin{figure}
+  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-11C-table-overflow.png}
+  %     \caption{A runaway \texttt{l} column.}
+  %     \label{fig:day01-overleaf-11C}
+  %   \end{figure}
+  % \end{frame}
 
-  \begin{frame}{Paragraph Columns}
-    (\texttt{\{p\}}) columns are forced to a given width.
-    \begin{figure}
-      \includegraphics[width=0.9\linewidth]{day01-overleaf-11D-table-overflow.png}
-      \caption{Same text in a \texttt{p} column with wrapped text.}
-      \label{fig:day01-overleaf-11D}
-    \end{figure}
-  \end{frame}
+  % \begin{frame}{Paragraph Columns}
+  %   (\texttt{\{p\}}) columns are forced to a given width.
+  %   \begin{figure}
+  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-11D-table-overflow.png}
+  %     \caption{Same text in a \texttt{p} column with wrapped text.}
+  %     \label{fig:day01-overleaf-11D}
+  %   \end{figure}
+  % \end{frame}
 
-  \begin{frame}{Adding rules}
-    Rules (lines) are enabled with the \texttt{booktabs} package.
-    \begin{figure}
-      \includegraphics[width=0.9\linewidth]{day01-overleaf-11E-table-rule.png}
-      % \caption{}
-      % \label{fig:day01-overleaf-11E}
-    \end{figure}
-  \end{frame}
+  % \begin{frame}{Adding rules}
+  %   Rules (lines) are enabled with the \texttt{booktabs} package.
+  %   \begin{figure}
+  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-11E-table-rule.png}
+  %     % \caption{}
+  %     % \label{fig:day01-overleaf-11E}
+  %   \end{figure}
+  % \end{frame}
 
-  \begin{frame}{Adding rules}
-    \texttt{\textbackslash cmidrule} spans a subset of columns.
-    \begin{figure}
-      \includegraphics[width=0.9\linewidth]{day01-overleaf-11F-table-cmidrule.png}
-    \end{figure}
-  \end{frame}
+  % \begin{frame}{Adding rules}
+  %   \texttt{\textbackslash cmidrule} spans a subset of columns.
+  %   \begin{figure}
+  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-11F-table-cmidrule.png}
+  %   \end{figure}
+  % \end{frame}
 
-  \begin{frame}{Adding line space}
-    \texttt{\textbackslash addlinespace} useful for more subtle separation.
-    \begin{figure}
-      \includegraphics[width=0.9\linewidth]{day01-overleaf-11G-table-linespace.png}
-    \end{figure}
-  \end{frame}
+  % \begin{frame}{Adding line space}
+  %   \texttt{\textbackslash addlinespace} useful for more subtle separation.
+  %   \begin{figure}
+  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-11G-table-linespace.png}
+  %   \end{figure}
+  % \end{frame}
 
-  \begin{frame}{Merging cells}
-    \texttt{\textbackslash multicolumn} creates cells spanning multiple columns. Arguments include:
-    \begin{enumerate}
-      \item Number of columns cell spans
-      \item Alignment of cell
-      \item Contents of cell
-    \end{enumerate}
-    \begin{figure}
-      \includegraphics[width=0.9\linewidth]{day01-overleaf-11H-table-merge.png}
-    \end{figure}
-  \end{frame}
+  % \begin{frame}{Merging cells}
+  %   \texttt{\textbackslash multicolumn} creates cells spanning multiple columns. Arguments include:
+  %   \begin{enumerate}
+  %     \item Number of columns cell spans
+  %     \item Alignment of cell
+  %     \item Contents of cell
+  %   \end{enumerate}
+  %   \begin{figure}
+  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-11H-table-merge.png}
+  %   \end{figure}
+  % \end{frame}
 
-  \begin{frame}{Merging cells vertically}
-    No support for vertical merging. Workaround: use blank cells!
-    \begin{figure}
-      \includegraphics[width=0.9\linewidth]{day01-overleaf-11I-table-vertmerge.png}
-    \end{figure}
-  \end{frame}
+  % \begin{frame}{Merging cells vertically}
+  %   No support for vertical merging. Workaround: use blank cells!
+  %   \begin{figure}
+  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-11I-table-vertmerge.png}
+  %   \end{figure}
+  % \end{frame}
 
-  \nofoot{
-  \begin{frame}{Table Generation}
-    Useful utility for table creation: \url{https://www.tablesgenerator.com/}.
-    \begin{figure}
-      \includegraphics[width=0.6\linewidth]{day01-overleaf-12A-table-creation.png}
-      \caption{Generate code for table based on WYSIWYG editor.}
-      \label{fig:day01-overleaf-12A}
-    \end{figure}
-  \end{frame}
-  }
+  % \nofoot{
+  % \begin{frame}{Table Generation}
+  %   Useful utility for table creation: \url{https://www.tablesgenerator.com/}.
+  %   \begin{figure}
+  %     \includegraphics[width=0.6\linewidth]{day01-overleaf-12A-table-creation.png}
+  %     \caption{Generate code for table based on WYSIWYG editor.}
+  %     \label{fig:day01-overleaf-12A}
+  %   \end{figure}
+  % \end{frame}
+  % }
 
 \begin{frame}{End of Day 01}
   \begin{itemize}
-    \item Finished Lessons 1-8 from \texttt{learnlatex.org}
-    \item Tomorrow: Lessons 9-16 from \texttt{learnlatex.org}
+    \item Finished Lessons 1-6 from \texttt{learnlatex.org}
+    \item Tomorrow: Lessons 7-12 from \texttt{learnlatex.org}
     \item Questions? Ask on the Slack channel! (\#latex101)
   \end{itemize}
 \end{frame}
