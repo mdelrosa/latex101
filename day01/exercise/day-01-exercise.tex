@@ -1,0 +1,68 @@
+\documentclass[twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+
+\usepackage{lipsum}
+\usepackage{xcolor}
+\newcommand\greenline[1]{\textcolor{green}{\underline{#1}}}
+
+\title{Day01 Exercise}
+\date{January 2022}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction} \label{sec:intro}
+
+Your goal is to reverse-engineer this document! Here's what to do:
+
+\begin{enumerate}
+    \item Open Overleaf, sign in.
+    \item Create a blank project by:
+    \begin{enumerate}
+        \item Clicking on ``New Project" 
+        \item Clicking on ``Blank Project"
+    \end{enumerate}
+    \item Fill in the project so it looks like this page!
+\end{enumerate}
+
+\section{Define a command} \label{sec:command}
+
+Using the \texttt{kw} command as a template, write a command called \texttt{greenline} to format text \greenline{like this}.
+
+\section{Use the \texttt{lipsum} package} \label{sec:package}
+
+Using the \texttt{lipsum} command from the \texttt{lipsum} package, generate the following three paragraphs of dummy text.
+
+\lipsum[1-3]
+
+\section{Hints}
+
+Unless you want more practice, you don't have to replicate this section!
+
+\begin{itemize}
+    \item \textbf{Formatting}
+    \begin{itemize}
+        \item The numbered headers use \texttt{section} commands.
+        \item The margins have been adjusted to 0.5 in.
+        \item The \texttt{[twocolumn]} option for \texttt{documentclass} creates two columns.
+        \item Text formatting we've used includes \texttt{texttt}.
+    \end{itemize}
+    \item \textbf{\ref{sec:intro} Introduction}
+    \begin{itemize}
+        \item There is a nested \texttt{enumerate} environment here!
+        \item You might need to use the \texttt{xcolor} package to get the color green!
+    \end{itemize}
+    \item \textbf{\ref{sec:command} Define a command}
+    \begin{itemize}
+        \item The syntax for defining a command is: \texttt{\textbackslash newcommand\textbackslash greenline[]\{\}}
+    \end{itemize}
+    \item \textbf{\ref{sec:package} Use the \texttt{lipsum} package}
+    \begin{itemize}
+        \item You might need to use the \texttt{xcolor} package to get the color green!
+    \end{itemize}
+\end{itemize}
+
+
+\end{document}
