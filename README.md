@@ -34,8 +34,8 @@ On Day 3, I will cover how to use common LaTeX templates, including a CV and a B
 	- Bring either a CV or presentation slides you want to convert
 - Agenda:
 	- Go over templates (~40 minutes)
-		- CV Template (**TODO**) 
-		- Beamer Template (**TODO**)
+		- [CV Template](https://github.com/mdelrosa/latex101/tree/master/day03/CV) 
+		- [Davis Beamer Template](https://github.com/mdelrosa/latex101/tree/master/day03/davis_beamer_template)
 	- Work on CVs/Beamer slides (~1 hour)
 
 ## Resources
