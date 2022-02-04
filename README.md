@@ -1,30 +1,42 @@
 # LaTeX 101 Workshop - UC Davis GradPathways
 
-A guided walkthrough of the major concepts from [LearnLaTeX](https://www.learnlatex.org/en/) for the graduate community at UC Davis.
+## Background
 
-Three sessions last \~1 hour each. Each session should be interactive with participants writing and typesetting simple LaTeX files.
+Welcome! This is a guided walkthrough of the major concepts from the online tutorial, [LearnLaTeX](https://www.learnlatex.org/en/), for the graduate community at UC Davis.
 
-You do not need to download anything to participate in Days 1 or 2. We primarily use [Overleaf](https://www.overleaf.com/) to edit and typeset TeX files. 
+Three sessions last ~2 hours each (~1 hour of content, ~1 hour of typesetting). Each session will be interactive with participants writing and typesetting simple LaTeX files. Experience LaTeX users will be available to answer your questions.
 
-On Day 3, I will cover how to generate figures with embedded LaTeX, which requires installing [Inkscape](https://inkscape.org/), a free piece of software for editing vector graphics which works on Windows, Mac, and Unix systems.
+You will not need to download any software to participate. We primarily use [Overleaf](https://www.overleaf.com/) to edit and typeset TeX files. 
+
+On Day 3, I will cover how to use common LaTeX templates, including a CV and a Beamer template.
 
 ## Course Outline
 
-- Day 1. Introduction + Basic LaTeX
-	- Based on Lessons 1-8 from [learnlatex.org](https://www.learnlatex.org/en/)
-	- Prerequisites:
-		- Create Overleaf account
-		- Join UC Davis Slack channel + `\#latex101` channel
-	- [Slides](https://github.com/mdelrosa/latex101/blob/master/day01/presentation.pdf)
-- Day 2. Tables, Figures, Inkscape
-	- Based on Lessons 9-14 from [learnlatex.org](https://www.learnlatex.org/en/)
-	- Slides (**TODO**)
-	- Overleaf (**TODO**)
-- Day 3. Inkscape, Templates (CV, Beamer), Moving Forward
-	- Prerequisites:
-		- Download [Inkscape](https://inkscape.org/)
-	- Slides (**TODO**)
-	- Overleaf (**TODO**)
+### Day 1. Introduction + Basic LaTeX
+- Based on Lessons 1-8 from [learnlatex.org](https://www.learnlatex.org/en/)
+- Prerequisites:
+	- Create Overleaf account
+	- Join UC Davis Slack channel + `#latex101` channel
+- Agenda: 
+	- Go over [slides](https://github.com/mdelrosa/latex101/blob/master/day01/slides/presentation.pdf) (~1 hour)
+	- Work on [exercise](https://github.com/mdelrosa/latex101/blob/master/day01/exercise/day-02-exercise.pdf) (~1 hour)
+		- [Solution](https://github.com/mdelrosa/latex101/blob/master/day01/exercise/day-01-exercise.tex) 
+
+### Day 2. Figures, Tables, Equations, References
+- Based on Lessons 9-14 from [learnlatex.org](https://www.learnlatex.org/en/)
+- Agenda: 
+	- Go over [slides](https://github.com/mdelrosa/latex101/blob/master/day02/slides/presentation.pdf) (~1 hour)
+	- Work on [exercise](https://github.com/mdelrosa/latex101/blob/master/day02/exercise/day-02-exercise.pdf) (~1 hour)
+		- [Solution](https://github.com/mdelrosa/latex101/blob/master/day02/exercise/day-02-exercise.tex)
+
+### Day 3. Templates (CV, Beamer)
+- Prerequisites:
+	- Bring either a CV or presentation slides you want to convert
+- Agenda:
+	- Go over templates (~40 minutes)
+		- CV Template (**TODO**) 
+		- Beamer Template (**TODO**)
+	- Work on CVs/Beamer slides (~1 hour)
 
 ## Resources
 
