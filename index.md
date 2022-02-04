@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+# LaTeX 101 Workshop - UC Davis GradPathways
 
-You can use the [editor on GitHub](https://github.com/mdelrosa/latex101/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+A guided walkthrough of the major concepts from [LearnLaTeX](https://www.learnlatex.org/en/) for the graduate community at UC Davis.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Three sessions last \~2 hours each. Each session will interactive with participants writing and typesetting simple LaTeX files.
 
-### Markdown
+You do not need to download anything to participate in Days 1 or 2. We primarily use [Overleaf](https://www.overleaf.com/) to edit and typeset TeX files. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+On Day 3, I will cover how to use common LaTeX templates, including a CV and a Beamer template.
 
-```markdown
-Syntax highlighted code block
+## Course Outline
 
-# Header 1
-## Header 2
-### Header 3
+- Day 1. Introduction + Basic LaTeX
+	- Based on Lessons 1-8 from [learnlatex.org](https://www.learnlatex.org/en/)
+	- Prerequisites:
+		- Create Overleaf account
+		- Join UC Davis Slack channel + `\#latex101` channel
+	- [Slides](https://github.com/mdelrosa/latex101/blob/master/day01/presentation.pdf)
+- Day 2. Tables, Figures, Inkscape
+	- Based on Lessons 9-14 from [learnlatex.org](https://www.learnlatex.org/en/)
+	- Slides (**TODO**)
+	- Overleaf (**TODO**)
+- Day 3. Inkscape, Templates (CV, Beamer), Moving Forward
+	- Prerequisites:
+		- Download [Inkscape](https://inkscape.org/)
+	- Slides (**TODO**)
+	- Overleaf (**TODO**)
 
-- Bulleted
-- List
+## Further Resources
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mdelrosa/latex101/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- [Overleaf Documentation](https://www.overleaf.com/learn)
+- [Comprehensive TeX Archive Network (CTAN)](https://www.ctan.org/)
+	- [Symbols list](https://www.ctan.org/tex-archive/info/symbols/comprehensive/) (check pdfs at bottom of page)
+- [Detexify](http://detexify.kirelabs.org/classify.html) - Draw a symbol and see the corresponding LaTeX command.
+- [Tables Generator](https://www.tablesgenerator.com/) - Draw a table with WYSIWYG interface, get the LaTeX code for it.
+- LaTeX Forums -- Other places you can go for help
+	- \#latex101, \#latex channels on [UC Davis Slack](https://ucdavis.slack.com/) (UC Davis only)
+	- [r/latex](https://www.reddit.com/r/LaTeX/)
+	- [TeX on Stack Exchange](https://tex.stackexchange.com/)
+- [Inkscape](https://inkscape.org/) - For drawing figures with embedded LaTeX
+	- [Castel's Blog Post on figures for mathematical lecture notes](https://castel.dev/post/lecture-notes-2/)
