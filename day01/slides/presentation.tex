@@ -20,7 +20,7 @@
 \setlength{\columnseprule}{1pt}
 \def\columnseprulecolor{\color{black}}
 
-\graphicspath{ {../images/} }
+\graphicspath{ {../../images/} }
 
 \nobibliography*
 % \usepackage[perpage]{footmisc}
@@ -63,11 +63,11 @@
 
   \begin{frame}{Course Background}
     \begin{itemize} 
-      \item \textbf{Inspiration} -- https://www.learnlatex.org/. 
+      \item \textbf{Adapted from} -- https://www.learnlatex.org/. 
         \begin{itemize}
           \item Day 1 -- \texttt{learnlatex.org} lessons 1-6.
           \item Day 2 -- \texttt{learnlatex.org} lessons 7-12.
-          \item Day 3 -- Inkscape for graphics with embedded \LaTeX. Specific templates (resume, presentations).
+          \item Day 3 -- Specific templates (resume, presentation slides).
         \end{itemize}
       \item \textbf{Slides Available} -- https://github.com/mdelrosa/latex-101.
       \begin{itemize}
@@ -276,9 +276,9 @@
 
   \begin{frame}{Exercise: Text and Whitespace}
     \begin{itemize}
-      \item Try adding text to your first document, typesetting and seeing the changes in your PDF.
-      \item Make some different paragraphs and add variable spaces.
-      \item Explore how your editor works; click on your source and find how to go to the same line in your PDF.
+      \item Try adding text to your project, recompiling, and seeing the changes in your PDF.
+      \item Add some paragraphs with variable spacing. How does \LaTeX handle multiple spaces?
+      % \item Explore how your editor works; double click somewhere on your PDF, and see where your cursor moves in your source file.
       \item Share your observations/questions in chat!
     \end{itemize}
   \end{frame}
@@ -345,7 +345,7 @@
     \end{multicols}
   \end{frame}
 
-  \begin{frame}{Sectioning commands}
+  \begin{frame}{Lists}
     List commands: \texttt{itemize/enumerate} environments + \texttt{\textbackslash item} commands per each line.
     \begin{figure}
       \includegraphics[width=0.9\linewidth]{day01-overleaf-06-lists.png}
@@ -356,9 +356,10 @@
 
   \begin{frame}{Exercises}
   \begin{itemize}
-    \item Experiment with different sectioning levels. Try using \texttt{\textbackslash documentclass\{report\}} instead of \texttt{\textbackslash documentclass\{article\}} and adding \texttt{\textbackslash chapter} commands. How do they look?
+    \item Try formatting some text. Can you find any new formats at \texttt{https://latex-tutorial.com/changing-font-style/}?
+    % \item Experiment with different sectioning levels. Try using \texttt{\textbackslash documentclass\{report\}} instead of \texttt{\textbackslash documentclass\{article\}} and adding \texttt{\textbackslash chapter} commands. How do they look?
     \item Try out \texttt{\textbackslash paragraph} and (even) \texttt{\textbackslash subparagraph} to see they work: by default, they don’t add numbers.
-    \item Make some lists, and nest one list inside another. How does the format of the numbers or markers change? You can only go to four levels with standard \LaTeX, but more than four nested lists tends to be a bad sign anyway!
+    \item Make some lists, and nest one list inside another. How does the format of the numbers or markers change? (You can only go to four levels with standard \LaTeX.)
   \end{itemize}
   \end{frame}
 
@@ -371,7 +372,7 @@
     \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{Document Classes}
       \usebeamerfont{title}\insertsectionhead\par%
       \color{davisblue}\noindent\rule{10cm}{1pt} \\
-      \footnotesize{Base classes, function-rich classes(?), presentations}
+      \footnotesize{Base classes, presentations}
     \end{beamercolorbox}
     \vfill
   \end{frame}
@@ -399,7 +400,7 @@
   \begin{frame}{Chapters}
     \begin{figure}
       \includegraphics[width=0.9\linewidth]{day01-overleaf-07B-chapter-error.png}
-      \caption{Adding a \texttt{\textbackslash chapter} section causes an error.}
+      \caption{Adding a \texttt{\textbackslash chapter}  causes an error.}
       \label{fig:day01-overleaf-07B}
     \end{figure}
   \end{frame}
@@ -425,8 +426,8 @@
 
   \begin{frame}{Exercises}
     \begin{itemize}
-      \item Explore changing the document class between base classes, the KOMA bundle and memoir. How do these affect the appearance of the document?
-      \item Using the square brackets (\texttt{[]}), add the option \texttt{twocolumn}. How does this affect the layout of the document?
+      \item Explore changing the document class between base classes (e.g., \texttt{letter}, \texttt{report}). How do these affect the appearance of the document?
+      \item Using the square brackets (\texttt{[]}), add the option \texttt{twocolumn} to your \texttt{documentclass}. How does this affect the layout of the document?
     \end{itemize}
   \end{frame}
 
@@ -453,24 +454,25 @@
     \end{itemize}
   \end{frame}
 
-  \begin{frame}{Packages}
-    \textbf{Example: \texttt{babel}} -- rule sets for different languages.%\footnote[]More here: \url{https://www.learnlatex.org/en/more-06#the-babel-package}
-    \begin{figure}
-      \includegraphics[width=0.9\linewidth]{day01-overleaf-08A-package-geom.png}
-      \caption{\texttt{babel} package with french option changes hyphenation.}
-      \label{fig:day01-overleaf-08A}
-    \end{figure}
-  \end{frame}
 
-  \begin{frame}{Packages}
-    \textbf{Example: \texttt{babel}} -- rule sets for different languages.%\footnote[]More here: \url{https://www.learnlatex.org/en/more-06#the-babel-package}
-    \begin{figure}
-      \includegraphics[width=0.9\linewidth]{day01-overleaf-08B-package-babel.png}
-      \caption{\texttt{babel} package with french option changes hyphenation.}
-      \label{fig:day01-overleaf-08B}
-    \end{figure}
-    % \footnotetext[1]{More here: \url{https://www.learnlatex.org/en/more-06#the-babel-package}}    
-  \end{frame}
+  % \begin{frame}{Packages}
+  %   \textbf{Example: \texttt{babel}} -- rule sets for different languages.%\footnote[]More here: \url{https://www.learnlatex.org/en/more-06#the-babel-package}
+  %   \begin{figure}
+  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-08A-package-geom.png}
+  %     \caption{Filler text without using \texttt{babel} package.}
+  %     \label{fig:day01-overleaf-08A}
+  %   \end{figure}
+  % \end{frame}
+
+  % \begin{frame}{Packages}
+  %   \textbf{Example: \texttt{babel}} -- rule sets for different languages.%\footnote[]More here: \url{https://www.learnlatex.org/en/more-06#the-babel-package}
+  %   \begin{figure}
+  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-08B-package-babel.png}
+  %     \caption{\texttt{babel} package with french option changes hyphenation.}
+  %     \label{fig:day01-overleaf-08B}
+  %   \end{figure}
+  %   % \footnotetext[1]{More here: \url{https://www.learnlatex.org/en/more-06#the-babel-package}}    
+  % \end{frame}
 
   \begin{frame}{Packages}
     \textbf{Example: \texttt{geometry}} -- enables direct control of margins, borders, line spacing, etc.
@@ -508,6 +510,23 @@
       \caption{A definition for a custom `keyword' command \texttt{\textbackslash kw}.}
       \label{fig:day01-overleaf-09A}
     \end{figure}
+  \end{frame}
+
+  \begin{frame}{Day 01 Summary}
+    Today we covered:
+    \begin{itemize}
+      \item Document structure (commands, environments, errors)
+      \item Logical structure (sections, environments, lists)
+      \item Document classes (base classes)
+      \item Packages and definitions
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Day 01 Break Time}
+    When we come back, I'll introduce the assignment:
+    \begin{itemize}
+      \item \texttt{https://github.com/mdelrosa/latex101/blob/master/day01/exercise/day-01-exercise.pdf}
+    \end{itemize}
   \end{frame}
 
   % \section{Figures}
