@@ -30,7 +30,7 @@
 \usetheme{oxonian}
 
 
-\title{Day 02: Intro to \LaTeX (continued)}
+\title{Day 02: Intro to \LaTeX}
 \titlegraphic{\includegraphics[width=3cm]{Theme/Logos/DavisLogoV1.png}}
 \author{\small{Mason del Rosario}}
 \institute{\LaTeX 101}
@@ -46,7 +46,7 @@
 {\setbeamertemplate{footline}{} 
 \frame{\titlepage}}
 
-\section{Course Recap}
+  \section*{Course Recap}
 
   \begin{frame}{Course Recap}
     \begin{itemize} 
@@ -66,6 +66,8 @@
       \end{itemize}
     \end{itemize}
   \end{frame}
+
+  \section*{Outline}\begin{frame}{Outline}\tableofcontents\end{frame}
 
   \section{Figures}
 
@@ -155,7 +157,7 @@
     \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{Tables}
       \usebeamerfont{title}\insertsectionhead\par%
       \color{davisblue}\noindent\rule{10cm}{1pt} \\
-      \footnotesize{Including images, resizing, positioning}
+      \footnotesize{Building tables, aligning and merging cells}
     \end{beamercolorbox}
     \vfill
   \end{frame}
@@ -232,7 +234,7 @@
   \end{frame}
 
   \begin{frame}{Merging cells vertically}
-    No support for vertical merging. Workaround: use blank cells!
+    \texttt{multirow} package exists, but you can just use blank cells!
     \begin{figure}
       \includegraphics[width=0.9\linewidth]{day01-overleaf-11I-table-vertmerge.png}
     \end{figure}
@@ -248,6 +250,9 @@
     \end{figure}
   \end{frame}
   }
+
+  %TODO: potentially add interactive section for tablesgenerator?
+  % e.g., "try generating some LaTeX code for a complicated table. do any unfamiliar commands pop up?"
 
   \section{Cross Referencing}
 
