@@ -1,5 +1,7 @@
 # LaTeX 101 Workshop - UC Davis GradPathways
 
+**Note (3/11/2022)**: The Eventbrite page is not live yet, but I will post it here once it is available. For now, you can join the Slack channel (\#latex101 on the [UC Davis Slack server](https://ucdavis.slack.com/)) for updates and questions.
+
 ## Background
 
 Welcome! This is a guided walkthrough of the major concepts from the online tutorial, [LearnLaTeX](https://www.learnlatex.org/en/), for the graduate community at UC Davis.
