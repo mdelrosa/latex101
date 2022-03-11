@@ -30,7 +30,7 @@
 \usetheme{oxonian}
 
 
-\title{Day 03: \LaTeX Templates (CV and Beamer)}
+\title{Day 03: \LaTeX \;Templates (CV and Beamer)}
 \titlegraphic{\includegraphics[width=3cm]{Theme/Logos/DavisLogoV1.png}}
 \author{\small{Mason del Rosario}}
 \institute{\LaTeX 101}
@@ -69,15 +69,15 @@
 
   \section*{Outline}\begin{frame}{Outline}\tableofcontents\end{frame}
 
-  \section{Figures}
+  \section{Templates}
 
   \begin{frame}[plain]
     \vfill
     \centering
-    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{Graphics}
+    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{Templates}
       \usebeamerfont{title}\insertsectionhead\par%
       \color{davisblue}\noindent\rule{10cm}{1pt} \\
-      \footnotesize{Including images, resizing, positioning}
+      \footnotesize{Browsing for templates, uploading projects}
     \end{beamercolorbox}
     \vfill
   \end{frame}
@@ -107,11 +107,189 @@
   \end{frame}
   }
 
-\begin{frame}{End of Day 02}
+  \nofoot{
+  \begin{frame}{Uploading projects}
+    Can also upload a \LaTeX \;project as a \texttt{.zip} file
+    \begin{figure}
+      \includegraphics[width=0.7\linewidth]{day03-02-zip.png}
+      \caption{``New Project'' $\rightarrow$ ``Upload project''.}
+      \label{fig:day03-02-zip}
+    \end{figure}
+  \end{frame}
+  }
+
+  \section{CV/Resume Template}
+
+  \begin{frame}[plain]
+    \vfill
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{CV/Resume Template}
+      \usebeamerfont{title}\insertsectionhead\par%
+      \color{davisblue}\noindent\rule{10cm}{1pt} \\
+      % \footnotesize{}
+    \end{beamercolorbox}
+    \vfill
+  \end{frame}
+
+  \nofoot{
+  \begin{frame}{Templates for Today} 
+    Today, we'll work through a few templates.
+    \begin{enumerate}
+      \item Go to \texttt{https://github.com/mdelrosa/latex101/releases}
+      \item Find the latest release
+      \item Download \texttt{CV.zip} and \texttt{davis\_beamer\_template.zip}
+    \end{enumerate}
+    \begin{figure}
+      \includegraphics[width=0.7\linewidth]{day03-03-releases.png}
+      \caption{\texttt{.zip} files for today's exercises.}
+      \label{fig:day03-03-releases}
+    \end{figure}
+  \end{frame}
+  }
+
+  \nofoot{
+  \begin{frame}{Uploading the CV project}
+    Let's check out the CV project!
+    \begin{figure}
+      \includegraphics[width=0.7\linewidth]{day03-04-cvupload.png}
+      \caption{Uploading our CV project.}
+      \label{fig:day03-04-cvupload}
+    \end{figure}
+  \end{frame}
+  }
+
+  \nofoot{
+  \begin{frame}{CV project}
+    Project includes multiple files (\texttt{.tex}, \texttt{.cls})
+    \begin{figure}
+      \includegraphics[width=\linewidth]{day03-05A-cvproject.png}
+      \caption{CV project in Overleaf.}
+      \label{fig:day03-05A-cvproject}
+    \end{figure}
+  \end{frame}
+  }
+
+  \nofoot{
+  \begin{frame}{CV project: \texttt{.cls} file}
+    \texttt{.cls} files define custom document classes.
+    \begin{figure}
+      \includegraphics[width=\linewidth]{day03-05B-cvcls.png}
+      \caption{The \texttt{resume.cls} file in the CV project.}
+      \label{fig:day03-05B-cvcls}
+    \end{figure}
+  \end{frame}
+  }
+
+  \nofoot{
+  \begin{frame}{CV project: \texttt{\textbackslash documentclass}}
+    \texttt{\textbackslash documentclass} imports the custom class from the \texttt{.cls} file.
+    \begin{figure}
+      \includegraphics[width=\linewidth]{day03-05C-cvdocclass.png}
+      \caption{Importing \texttt{resume} from \texttt{resume.cls}.}
+      \label{fig:day03-05C-cvdocclass}
+    \end{figure}
+  \end{frame}
+  }
+
+  \nofoot{
+  \begin{frame}{CV project: Header}
+    \begin{itemize}
+      \item \texttt{\textbackslash fa} commands define icons.
+      \item \texttt{\textbackslash hfill} creates horizontal whitespace to fill current line
+    \end{itemize}
+    \begin{figure}
+      \includegraphics[width=\linewidth]{day03-05D-cvaddress.png}
+      \caption{CV header with icons for contact information.}
+      \label{fig:day03-05D-cvaddress}
+    \end{figure}
+  \end{frame}
+  }
+
+  \nofoot{
+  \begin{frame}{CV project: Summary}
+    \begin{itemize}
+      \item \texttt{\textbackslash rSection}: custom \texttt{Section} environment.
+    \end{itemize}
+    \begin{figure}
+      \includegraphics[width=\linewidth]{day03-05E-cvsummary.png}
+      \caption{CV summary with an \texttt{rSection} environment.}
+      \label{fig:day03-05E-cvsummary}
+    \end{figure}
+  \end{frame}
+  }
+
+  \nofoot{
+  \begin{frame}{CV project: Projects/Research}
+    \begin{figure}
+      \includegraphics[width=\linewidth]{day03-05F-cvresearch.png}
+      \caption{CV \texttt{rSection} for projects/research.}
+      \label{fig:day03-05F-cvresearch}
+    \end{figure}
+  \end{frame}
+  }
+
+  \nofoot{
+  \begin{frame}{CV project: Skills}
+    \begin{itemize}
+      \item \texttt{@\{text\}}: Inserts `text' in every row.
+      \item \texttt{$>$\{\textbackslash bfseries\}}: Applies bold face to entire column.
+      \item \texttt{\textbackslash hspace\{3ex\}}: \texttt{ex} denotes horizontal size of `x' in the given font.
+    \end{itemize}
+    \begin{figure}
+      \includegraphics[width=\linewidth]{day03-05G-cvskills.png}
+      \caption{CV \texttt{rSection} for skills.}
+      \label{fig:day03-05G-cvskills}
+    \end{figure}
+  \end{frame}
+  }
+
+  \nofoot{
+  \begin{frame}{CV project: Education}
+    \begin{figure}
+      \includegraphics[width=0.7\linewidth]{day03-05H-cvedu.png}
+      \caption{CV \texttt{rSection} for education.}
+      \label{fig:day03-05H-cvedu}
+    \end{figure}
+  \end{frame}
+  }
+
+  \nofoot{
+  \begin{frame}{CV project: Work Experience}
+    \begin{figure}
+      \includegraphics[width=0.7\linewidth]{day03-05I-cvwork.png}
+      \caption{CV \texttt{rSection} for work experience.}
+      \label{fig:day03-05I-cvwork}
+    \end{figure}
+  \end{frame}
+  }
+
+  \nofoot{
+  \begin{frame}{CV project: Publications}
+    \begin{figure}
+      \includegraphics[width=0.9\linewidth]{day03-05J-cvpub.png}
+      \caption{CV \texttt{rSection} for publications.}
+      \label{fig:day03-05I-cvpub}
+    \end{figure}
+  \end{frame}
+  }
+
+  \section{Beamer Template}
+
+  \begin{frame}[plain]
+    \vfill
+    \centering
+    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{Beamer Templates}
+      \usebeamerfont{title}\insertsectionhead\par%
+      \color{davisblue}\noindent\rule{10cm}{1pt} \\
+      \footnotesize{Slide decks for academic presentations.}
+    \end{beamercolorbox}
+    \vfill
+  \end{frame}
+
+\begin{frame}{End of Day 3}
   \begin{itemize}
-    \item Finished: Lessons 1-6 (Day 01) and 7-12 (Day 02) from \texttt{learnlatex.org}
-    \item Lessons 13 to 16 -- can ask questions re: these on the Slack channel! (\#latex101)
-    \item Next time: Resume/CV templates, Beamer, Inkscape
+    \item Lessons 1-12 from \texttt{learnlatex.org}
+    \item Today: Templates (Resume/CV, Beamer)
   \end{itemize}
 \end{frame}
 
