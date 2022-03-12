@@ -1,0 +1,204 @@
+% Quick start guide
+\documentclass{beamer}
+\usepackage{lipsum}
+
+\usetheme{default}
+
+% Title page details
+\title {\LaTeX{} 101}
+\subtitle{Beamer Template}
+\author{Jane Doe}
+\institute{UC Davis GradPathways}
+\date{\today}
+
+% Image Logo
+% \logo{\includegraphics[width=2.5cm]{DavisLogoV3.png}} 
+\titlegraphic{\includegraphics[width=2.5cm]{DavisLogoV3.png}} 
+
+\begin{document}
+
+\begin{frame}
+	% Print the title page as the first slide
+	\titlepage
+\end{frame}
+
+\label{Outline}
+\begin{frame}{Outline}
+	\tableofcontents
+\end{frame}
+
+\section{Lists}
+
+\subsection{Unordered Lists}
+
+\begin{frame}{Unordered Lists}{Itemize environment (default)}
+\begin{itemize}
+    \item First item
+    \item Second item
+    \item Third item
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Ordered Lists}{Itemize environment (different shapes)}
+\setbeamertemplate{itemize items}[circle]
+\begin{itemize}
+    \item First item
+    \item Second item
+    \item Third item
+\end{itemize}
+
+\setbeamertemplate{itemize items}[square]
+\begin{itemize}
+    \item First item
+    \item Second item
+    \item Third item
+\end{itemize}
+
+\setbeamertemplate{itemize items}[ball]
+\begin{itemize}
+    \item First item
+    \item Second item
+    \item Third item
+\end{itemize}
+
+\setbeamertemplate{itemize items}[default] % reset
+
+\end{frame}
+
+\subsection{Ordered Lists}
+
+\begin{frame}{Ordered Lists}{Enumerate environment (default)}
+\begin{enumerate}
+    \item First item
+    \item Second item
+    \item Third item
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Ordered Lists}{Enumerate environment (different shapes)}
+\setbeamertemplate{enumerate items}[circle]
+\begin{enumerate}
+    \item First item
+    \item Second item
+    \item Third item
+\end{enumerate}
+
+\setbeamertemplate{enumerate items}[square]
+\begin{enumerate}
+    \item First item
+    \item Second item
+    \item Third item
+\end{enumerate}
+
+\setbeamertemplate{enumerate items}[ball]
+\begin{enumerate}
+    \item First item
+    \item Second item
+    \item Third item
+\end{enumerate}
+
+\setbeamertemplate{enumerate items}[default] % reset
+
+\end{frame}
+
+\subsection{Descriptions}
+
+\begin{frame}{Descriptions}{Description environment}
+
+% item commands take optional argument for decorating each item
+\begin{description}
+    \item[Day 01] Basics
+    \item[Day 02] Advanced Topics
+    \item[Day 03] Templates
+\end{description}
+
+\end{frame}
+
+\section{Tables/Figures}
+
+\subsection{Tables}
+
+\begin{frame}{Tables}
+
+\begin{table}
+\begin{tabular}{| c || c | c |}
+    \hline
+    No. & Name & Age \\
+    \hline \hline
+    1 & John T & 24 \\
+    2 & Norman P & 8 \\
+    3 & Alex K & 14 \\ 
+    \hline
+\end{tabular}
+\caption{Name and age of students}
+\end{table}
+
+\end{frame}
+
+% Figures in beamer
+\begin{frame}{Figures}
+\begin{figure}
+    \includegraphics[width=0.8\linewidth]{DavisLogoV3.png}
+    \caption{A logo for UC Davis}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Columns}{\texttt{columns}, \texttt{column} environment}
+\begin{columns}
+    \begin{column}{0.5\textwidth} % first column
+        \tiny{\lipsum[1-1]}
+    \end{column}
+
+    \begin{column}{0.5\textwidth} % second column
+        \includegraphics[width=0.9\columnwidth]{DavisLogoV3.png}
+    \end{column}
+\end{columns}
+\end{frame}
+
+\section{Beamer-specific Environments}
+
+\subsection{Blocks}
+
+\label{Blocks}
+\begin{frame}{Blocks}{Generic blocks}
+
+\begin{block}{Block 1}
+This is a simple block in beamer.
+\end{block}
+
+\begin{alertblock}{Block 2}
+This is an alert block in beamer.
+\end{alertblock}
+
+\begin{exampleblock}{Block 3}
+This is an example block in beamer.
+\end{exampleblock}
+
+\end{frame}
+
+
+\begin{frame}{Blocks}{Math blocks}
+
+\begin{theorem}
+    It's in \LaTeX{} so it must be true $ a^2 + b^2 = c^2$.
+\end{theorem}
+\begin{corollary}
+    a = b
+\end{corollary}
+\begin{proof}
+    a + b = b + c
+\end{proof}
+
+\end{frame}
+
+\subsection{Hyperlinks and Buttons}
+
+\begin{frame}{Hyperlinks and Buttons}
+
+    \hyperlink{Blocks}{Click here to return to `Blocks'}
+
+    \hyperlink{Outline}{\beamerbutton{Click here to return to `Outline'}}
+
+\end{frame}
+
+\end{document}
