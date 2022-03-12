@@ -1,6 +1,8 @@
 # LaTeX 101 Workshop - UC Davis GradPathways
 
-**Note (3/11/2022)**: The Eventbrite page is not live yet, but I will post it here once it is available. For now, you can join the Slack channel (\#latex101 on the [UC Davis Slack server](https://ucdavis.slack.com/)) for updates and questions.
+**Note (3/11/2022)**: The [Eventbrite page is live](https://www.eventbrite.com/e/latex-101-workshop-tickets-295544520617)! Date/Time: March 21st to 23rd, 10 AM - 12 PM each day. Each day builds upon the previous day, so attending all three days is strongly encouraged!
+
+If you still have questions, you can email mdelrosa(at)ucdavis.edu or join the Slack channel (\#latex101 on the [UC Davis Slack server](https://ucdavis.slack.com/)).
 
 ## Background
 
