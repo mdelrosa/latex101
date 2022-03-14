@@ -2,6 +2,9 @@
 
 \documentclass{beamer}
 \usepackage{lipsum}
+\usepackage{bibentry}
+\usepackage{footer} % footer.sty for nofoot, blfootnote commands
+\nobibliography* % enables bibentry command in blfootnote commands
 
 \usetheme{default}
 
@@ -18,196 +21,210 @@
 
 \begin{document}
 
-\begin{frame}
-	% Print the title page as the first slide
-	\titlepage
-\end{frame}
+    \begin{frame}
+    	% Print the title page as the first slide
+    	\titlepage
+    \end{frame}
 
-\label{Outline}
-\begin{frame}{Outline}
-	\tableofcontents
-\end{frame}
+    \label{Outline}
+    \begin{frame}{Outline}
+    	\tableofcontents
+    \end{frame}
 
-\section{General \LaTeX{} Environments}
+    \section{General \LaTeX{} Environments}
 
-\subsection{Unordered Lists}
+    \subsection{Unordered Lists}
 
-\begin{frame}{Unordered Lists}{Itemize environment (default)}
-\begin{itemize}
-    \item First item
-    \item Second item
-    \item Third item
-\end{itemize}
-\end{frame}
+    \begin{frame}{Unordered Lists}{Itemize environment (default)}
+    \begin{itemize}
+        \item First item
+        \item Second item
+        \item Third item
+    \end{itemize}
+    \end{frame}
 
-\begin{frame}{Ordered Lists}{Itemize environment (different shapes)}
-\setbeamertemplate{itemize items}[circle]
-\begin{itemize}
-    \item First item
-    \item Second item
-    \item Third item
-\end{itemize}
+    \begin{frame}{Ordered Lists}{Itemize environment (different shapes)}
+    \setbeamertemplate{itemize items}[circle]
+    \begin{itemize}
+        \item First item
+        \item Second item
+        \item Third item
+    \end{itemize}
 
-\setbeamertemplate{itemize items}[square]
-\begin{itemize}
-    \item First item
-    \item Second item
-    \item Third item
-\end{itemize}
+    \setbeamertemplate{itemize items}[square]
+    \begin{itemize}
+        \item First item
+        \item Second item
+        \item Third item
+    \end{itemize}
 
-\setbeamertemplate{itemize items}[ball]
-\begin{itemize}
-    \item First item
-    \item Second item
-    \item Third item
-\end{itemize}
+    \setbeamertemplate{itemize items}[ball]
+    \begin{itemize}
+        \item First item
+        \item Second item
+        \item Third item
+    \end{itemize}
 
-\setbeamertemplate{itemize items}[default] % reset
+    \setbeamertemplate{itemize items}[default] % reset
 
-\end{frame}
+    \end{frame}
 
-\subsection{Ordered Lists}
+    \subsection{Ordered Lists}
 
-\begin{frame}{Ordered Lists}{Enumerate environment (default)}
-\begin{enumerate}
-    \item First item
-    \item Second item
-    \item Third item
-\end{enumerate}
-\end{frame}
+    \begin{frame}{Ordered Lists}{Enumerate environment (default)}
+    \begin{enumerate}
+        \item First item
+        \item Second item
+        \item Third item
+    \end{enumerate}
+    \end{frame}
 
-\begin{frame}{Ordered Lists}{Enumerate environment (different shapes)}
-\setbeamertemplate{enumerate items}[circle]
-\begin{enumerate}
-    \item First item
-    \item Second item
-    \item Third item
-\end{enumerate}
+    \begin{frame}{Ordered Lists}{Enumerate environment (different shapes)}
+    \setbeamertemplate{enumerate items}[circle]
+    \begin{enumerate}
+        \item First item
+        \item Second item
+        \item Third item
+    \end{enumerate}
 
-\setbeamertemplate{enumerate items}[square]
-\begin{enumerate}
-    \item First item
-    \item Second item
-    \item Third item
-\end{enumerate}
+    \setbeamertemplate{enumerate items}[square]
+    \begin{enumerate}
+        \item First item
+        \item Second item
+        \item Third item
+    \end{enumerate}
 
-\setbeamertemplate{enumerate items}[ball]
-\begin{enumerate}
-    \item First item
-    \item Second item
-    \item Third item
-\end{enumerate}
+    \setbeamertemplate{enumerate items}[ball]
+    \begin{enumerate}
+        \item First item
+        \item Second item
+        \item Third item
+    \end{enumerate}
 
-\setbeamertemplate{enumerate items}[default] % reset
+    \setbeamertemplate{enumerate items}[default] % reset
 
-\end{frame}
+    \end{frame}
 
-\subsection{Descriptions}
+    \subsection{Descriptions}
 
-\begin{frame}{Descriptions}{Description environment}
+    \begin{frame}{Descriptions}{Description environment}
 
-% item commands take optional argument for decorating each item
-\begin{description}
-    \item[Day 01] Basics
-    \item[Day 02] Advanced Topics
-    \item[Day 03] Templates
-\end{description}
+    % item commands take optional argument for decorating each item
+    \begin{description}
+        \item[Day 01] Basics
+        \item[Day 02] Advanced Topics
+        \item[Day 03] Templates
+    \end{description}
 
-\end{frame}
+    \end{frame}
 
-\subsection{Tables}
+    \subsection{Tables}
 
-\begin{frame}{Tables}
+    \begin{frame}{Tables}
 
-\begin{table}
-\begin{tabular}{| c || c | c |}
-    \hline
-    No. & Name & Age \\
-    \hline \hline
-    1 & John T & 24 \\
-    2 & Norman P & 8 \\
-    3 & Alex K & 14 \\ 
-    \hline
-\end{tabular}
-\caption{Name and age of students}
-\end{table}
+    \begin{table}
+    \begin{tabular}{| c || c | c |}
+        \hline
+        No. & Name & Age \\
+        \hline \hline
+        1 & John T & 24 \\
+        2 & Norman P & 8 \\
+        3 & Alex K & 14 \\ 
+        \hline
+    \end{tabular}
+    \caption{Name and age of students}
+    \end{table}
 
-\end{frame}
+    \end{frame}
 
-\subsection{Figures}
+    \subsection{Figures}
 
-% Figures in beamer
-\begin{frame}{Figures}
-\begin{figure}
-    \includegraphics[width=0.8\linewidth]{DavisLogoV3.png}
-    \caption{A logo for UC Davis}
-\end{figure}
-\end{frame}
+    % Figures in beamer
+    \begin{frame}{Figures}
+    \begin{figure}
+        \includegraphics[width=0.8\linewidth]{DavisLogoV3.png}
+        \caption{A logo for UC Davis}
+    \end{figure}
+    \end{frame}
 
-\subsection{Footnotes}
+    \subsection{Footnotes}
 
-\begin{frame}{Footnotes}
-    Text with a footnote\footnote{Here is the footnote.}.
-\end{frame}
+    \begin{frame}{Footnotes}
+        Text with a footnote\footnote{Here is the footnote.}.
+    \end{frame}
 
-\section{Beamer-specific Environments}
+    \subsection{Citations}
 
-\subsection{Columns}
+    % blfootnote = make space for in-frame references to complement citations
+    %              wrapper for bibentry command; use with frame surrounded by nofoot command
+    \begin{frame}{Citations}
+      An example of a citation \cite{ref:oetiker1995not} and a footnote reference.
+      \blfootnote{\bibentry{ref:oetiker1995not}}
+    \end{frame}
 
-\begin{frame}{Columns}{\texttt{columns}, \texttt{column} environment}
-\begin{columns}
-    \begin{column}{0.5\textwidth} % first column
-        \tiny{\lipsum[1-1]}
-    \end{column}
+    \section*{References}
 
-    \begin{column}{0.5\textwidth} % second column
-        \includegraphics[width=0.9\columnwidth]{DavisLogoV3.png}
-    \end{column}
-\end{columns}
-\end{frame}
+    % references slide
+    \begin{frame}{References}{\texttt{frame} with all cited works}
+      \setbeamertemplate{bibliography item}[text]
+      \bibliographystyle{ieeetr}
+      \bibliography{refs}
+    \end{frame}
 
-\subsection{Blocks}
+    \section{Beamer-specific Environments}
 
-\label{Blocks}
-\begin{frame}{Blocks}{Generic blocks}
+    \subsection{Columns}
 
-\begin{block}{Block 1}
-This is a simple block in beamer.
-\end{block}
+    \begin{frame}{Columns}{\texttt{columns}, \texttt{column} environment}
+    \begin{columns}
+        \begin{column}{0.5\textwidth} % first column
+            \tiny{\lipsum[1-1]}
+        \end{column}
 
-\begin{alertblock}{Block 2}
-This is an alert block in beamer.
-\end{alertblock}
+        \begin{column}{0.5\textwidth} % second column
+            \includegraphics[width=0.9\columnwidth]{DavisLogoV3.png}
+        \end{column}
+    \end{columns}
+    \end{frame}
 
-\begin{exampleblock}{Block 3}
-This is an example block in beamer.
-\end{exampleblock}
+    \subsection{Blocks}
 
-\end{frame}
+    \label{Blocks}
+    \begin{frame}{Blocks}{Generic blocks}
+
+    \begin{block}{Block 1}
+    This is a simple block in beamer.
+    \end{block}
+
+    \begin{alertblock}{Block 2}
+    This is an alert block in beamer.
+    \end{alertblock}
+
+    \begin{exampleblock}{Block 3}
+    This is an example block in beamer.
+    \end{exampleblock}
+
+    \end{frame}
 
 
-\begin{frame}{Blocks}{Math blocks}
+    \begin{frame}{Blocks}{Math blocks}
 
-\begin{theorem}
-    It's in \LaTeX{} so it must be true $ a^2 + b^2 = c^2$.
-\end{theorem}
-\begin{corollary}
-    a = b
-\end{corollary}
-\begin{proof}
-    a + b = b + c
-\end{proof}
+    \begin{theorem}
+        It's in \LaTeX{} so it must be true $ a^2 + b^2 = c^2$.
+    \end{theorem}
+    \begin{corollary}
+        a = b
+    \end{corollary}
+    \begin{proof}
+        a + b = b + c
+    \end{proof}
+    \end{frame}
+    \subsection{Hyperlinks and Buttons}
+    \begin{frame}{Hyperlinks and Buttons}
 
-\end{frame}
+        \hyperlink{Blocks}{Click here to return to `Blocks'}
 
-\subsection{Hyperlinks and Buttons}
-
-\begin{frame}{Hyperlinks and Buttons}
-
-    \hyperlink{Blocks}{Click here to return to `Blocks'}
-
-    \hyperlink{Outline}{\beamerbutton{Click here to return to `Outline'}}
-
-\end{frame}
+        \hyperlink{Outline}{\beamerbutton{Click here to return to `Outline'}}
+    \end{frame}
 
 \end{document}

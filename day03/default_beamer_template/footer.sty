@@ -1,0 +1,13 @@
+% footer.sty
+
+% suppress footer in given frame
+\newcommand{\nofoot}[1]{\begingroup \setbeamertemplate{footline}{} {#1} \endgroup}
+
+% add footnote with bibliography entry
+% Notes on in-frame references for citations: https://latex.org/forum/viewtopic.php?t=12027
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{\scriptsize{#1}}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
