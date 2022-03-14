@@ -1,12 +1,13 @@
-% Quick start guide
+% Adapted from https://latex-beamer.com/quick-start/
+
 \documentclass{beamer}
 \usepackage{lipsum}
 
 \usetheme{default}
 
 % Title page details
-\title {\LaTeX{} 101}
-\subtitle{Beamer Template}
+\title {Default Beamer Template}
+\subtitle{\LaTeX{} 101}
 \author{Jane Doe}
 \institute{UC Davis GradPathways}
 \date{\today}
@@ -27,7 +28,7 @@
 	\tableofcontents
 \end{frame}
 
-\section{Lists}
+\section{General \LaTeX{} Environments}
 
 \subsection{Unordered Lists}
 
@@ -114,8 +115,6 @@
 
 \end{frame}
 
-\section{Tables/Figures}
-
 \subsection{Tables}
 
 \begin{frame}{Tables}
@@ -135,6 +134,8 @@
 
 \end{frame}
 
+\subsection{Figures}
+
 % Figures in beamer
 \begin{frame}{Figures}
 \begin{figure}
@@ -142,6 +143,16 @@
     \caption{A logo for UC Davis}
 \end{figure}
 \end{frame}
+
+\subsection{Footnotes}
+
+\begin{frame}{Footnotes}
+    Text with a footnote\footnote{Here is the footnote.}.
+\end{frame}
+
+\section{Beamer-specific Environments}
+
+\subsection{Columns}
 
 \begin{frame}{Columns}{\texttt{columns}, \texttt{column} environment}
 \begin{columns}
@@ -154,8 +165,6 @@
     \end{column}
 \end{columns}
 \end{frame}
-
-\section{Beamer-specific Environments}
 
 \subsection{Blocks}
 

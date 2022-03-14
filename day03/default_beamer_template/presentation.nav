@@ -4,7 +4,7 @@
 \headcommand {\beamer@framepages {2}{2}}
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\sectionentry {1}{Lists}{3}{Lists}{0}}
+\headcommand {\sectionentry {1}{General \LaTeX {} Environments}{3}{General \LaTeX {} Environments}{0}}
 \headcommand {\beamer@subsectionpages {3}{2}}
 \headcommand {\beamer@subsectionentry {0}{1}{1}{3}{Unordered Lists}}
 \headcommand {\slideentry {1}{1}{1}{3/3}{Unordered Lists}{0}}
@@ -21,32 +21,37 @@
 \headcommand {\beamer@subsectionentry {0}{1}{3}{7}{Descriptions}}
 \headcommand {\slideentry {1}{3}{1}{7/7}{Descriptions}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@sectionpages {3}{7}}
 \headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\sectionentry {2}{Tables/Figures}{8}{Tables/Figures}{0}}
-\headcommand {\beamer@subsectionpages {8}{7}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{8}{Tables}}
-\headcommand {\slideentry {2}{1}{1}{8/8}{Tables}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{4}{8}{Tables}}
+\headcommand {\slideentry {1}{4}{1}{8/8}{Tables}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {2}{1}{2}{9/9}{Tables}{0}}
+\headcommand {\beamer@subsectionpages {8}{8}}
+\headcommand {\beamer@subsectionentry {0}{1}{5}{9}{Figures}}
+\headcommand {\slideentry {1}{5}{1}{9/9}{Figures}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {2}{1}{3}{10/10}{Tables}{0}}
+\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\beamer@subsectionentry {0}{1}{6}{10}{Footnotes}}
+\headcommand {\slideentry {1}{6}{1}{10/10}{Footnotes}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@sectionpages {8}{10}}
-\headcommand {\beamer@subsectionpages {8}{10}}
-\headcommand {\sectionentry {3}{Beamer-specific Environments}{11}{Beamer-specific Environments}{0}}
+\headcommand {\beamer@sectionpages {3}{10}}
+\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\sectionentry {2}{Beamer-specific Environments}{11}{Beamer-specific Environments}{0}}
 \headcommand {\beamer@subsectionpages {11}{10}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{11}{Blocks}}
-\headcommand {\slideentry {3}{1}{1}{11/11}{Blocks}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{11}{Columns}}
+\headcommand {\slideentry {2}{1}{1}{11/11}{Columns}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {3}{1}{2}{12/12}{Blocks}{0}}
+\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{12}{Blocks}}
+\headcommand {\slideentry {2}{2}{1}{12/12}{Blocks}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@subsectionpages {11}{12}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{13}{Hyperlinks and Buttons}}
-\headcommand {\slideentry {3}{2}{1}{13/13}{Hyperlinks and Buttons}{0}}
+\headcommand {\slideentry {2}{2}{2}{13/13}{Blocks}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@partpages {1}{13}}
-\headcommand {\beamer@subsectionpages {13}{13}}
-\headcommand {\beamer@sectionpages {11}{13}}
-\headcommand {\beamer@documentpages {13}}
-\headcommand {\gdef \inserttotalframenumber {13}}
+\headcommand {\beamer@subsectionpages {12}{13}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{14}{Hyperlinks and Buttons}}
+\headcommand {\slideentry {2}{3}{1}{14/14}{Hyperlinks and Buttons}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\beamer@partpages {1}{14}}
+\headcommand {\beamer@subsectionpages {14}{14}}
+\headcommand {\beamer@sectionpages {11}{14}}
+\headcommand {\beamer@documentpages {14}}
+\headcommand {\gdef \inserttotalframenumber {14}}
