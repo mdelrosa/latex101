@@ -17,85 +17,303 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{footer} % footer.sty for nofoot, blfootnote commands
+\usepackage{lipsum}
 
 \usetheme{oxonian}
 \nobibliography* % enables bibentry command in blfootnote commands
 
-\title{Presentation Title }
+\title {Davis Beamer Template}
 \titlegraphic{\includegraphics[width=3cm]{Theme/Logos/DavisLogoV1.png}}
-\author{\small{Author Name}}
-\institute{UC Davis}
-\date{\today} %\today
+\subtitle{\LaTeX{} 101}
+\author{Jane Doe}
+\institute{UC Davis GradPathways}
+\date{\today}
 
 \begin{document}
 
-\footnotesize{
-{\setbeamertemplate{footline}{} 
-\frame{\titlepage}}
+    \begin{frame}
+      % Print the title page as the first slide
+      \titlepage
+    \end{frame}
 
-\section*{Outline}
+    \label{Outline}
+    \begin{frame}{Outline}
+      \tableofcontents
+    \end{frame}
 
-% Example outline frame; renders sections, subsections, etc.
-\begin{frame}{Outline}
-  \tableofcontents
-\end{frame}
+    \section{General \LaTeX{} Environments}
 
-\section{Introduction}
+    \subsection{Unordered Lists}
 
-  % Example frame for introducing a section 
-  \begin{frame}[plain]
-    \vfill
-    \centering
-    \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{}
-      \usebeamerfont{title}\insertsectionhead\par%
-      \color{davisblue}\noindent\rule{10cm}{1pt} \\
-      \footnotesize{Section subtitle}
-    \end{beamercolorbox}
-    \vfill
-  \end{frame}
-  
-\subsection{Images}
+    \begin{frame}{Unordered Lists}{Itemize environment (default)}
+    \begin{itemize}
+        \item First item
+        \item Second item
+        \item Third item
+    \end{itemize}
+    \end{frame}
 
-  \begin{frame}{Example Image}
+    \begin{frame}{Ordered Lists}{Itemize environment (different shapes)}
+    \setbeamertemplate{itemize items}[circle]
+    \begin{itemize}
+        \item First item
+        \item Second item
+        \item Third item
+    \end{itemize}
+
+    \setbeamertemplate{itemize items}[square]
+    \begin{itemize}
+        \item First item
+        \item Second item
+        \item Third item
+    \end{itemize}
+
+    \setbeamertemplate{itemize items}[ball]
+    \begin{itemize}
+        \item First item
+        \item Second item
+        \item Third item
+    \end{itemize}
+
+    \setbeamertemplate{itemize items}[default] % reset
+
+    \end{frame}
+
+    \subsection{Ordered Lists}
+
+    \begin{frame}{Ordered Lists}{Enumerate environment (default)}
+    \begin{enumerate}
+        \item First item
+        \item Second item
+        \item Third item
+    \end{enumerate}
+    \end{frame}
+
+    \begin{frame}{Ordered Lists}{Enumerate environment (different shapes)}
+    \setbeamertemplate{enumerate items}[circle]
+    \begin{enumerate}
+        \item First item
+        \item Second item
+        \item Third item
+    \end{enumerate}
+
+    \setbeamertemplate{enumerate items}[square]
+    \begin{enumerate}
+        \item First item
+        \item Second item
+        \item Third item
+    \end{enumerate}
+
+    \setbeamertemplate{enumerate items}[ball]
+    \begin{enumerate}
+        \item First item
+        \item Second item
+        \item Third item
+    \end{enumerate}
+
+    \setbeamertemplate{enumerate items}[default] % reset
+
+    \end{frame}
+
+    \subsection{Descriptions}
+
+    \begin{frame}{Descriptions}{Description environment}
+
+    % item commands take optional argument for decorating each item
+    \begin{description}
+        \item[Day 01] Basics
+        \item[Day 02] Advanced Topics
+        \item[Day 03] Templates
+    \end{description}
+
+    \end{frame}
+
+    \subsection{Tables}
+
+    \begin{frame}{Tables}
+
+    \begin{table}
+    \begin{tabular}{| c || c | c |}
+        \hline
+        No. & Name & Age \\
+        \hline \hline
+        1 & John T & 24 \\
+        2 & Norman P & 8 \\
+        3 & Alex K & 14 \\ 
+        \hline
+    \end{tabular}
+    \caption{Name and age of students}
+    \end{table}
+
+    \end{frame}
+
+    \subsection{Figures}
+
+    % Figures in beamer
+    \begin{frame}{Figures}
     \begin{figure}
-      \includegraphics[width=0.7\linewidth]{example-image}
-      \caption{\texttt{example-image} is provided by default in most \LaTeX distributions.}
-      \label{fig:example}
+        \includegraphics[width=0.8\linewidth]{Theme/Logos/DavisLogoV3.png}
+        \caption{A logo for UC Davis}
     \end{figure}
-  \end{frame}
+    \end{frame}
 
-  % nofoot = suppresses the footer bar/badge.
-  %          provides more space in a given frame.
-  \nofoot{
-  \begin{frame}{Example Image (no Footer)}
-    \begin{figure}
-      \includegraphics[width=0.8\linewidth]{example-image}
-      \caption{\texttt{example-image} with footer suppressed.}
-      \label{fig:example-nofoot}
-    \end{figure}
-  \end{frame}
-  }
+    \subsection{Footnotes}
 
-\subsection{Citations}
+    \nofoot{
+    \begin{frame}{Footnotes}
+        Text with a footnote\footnote{Here is the footnote.}.
+    \end{frame}
+    }
 
-  % blfootnote = make space for in-frame references to complement citations
-  %              wrapper for bibentry command; use with frame surrounded by nofoot command
-  \nofoot{
-  \begin{frame}{Example Image (no Footer)}
-    An example of a citation \cite{ref:oetiker1995not} and a footnote reference.
-    \blfootnote{\bibentry{ref:oetiker1995not}}
-  \end{frame}
-  }
+    \subsection{Citations}
 
-\section*{References}
+    % blfootnote = make space for in-frame references to complement citations
+    %              wrapper for bibentry command; use with frame surrounded by nofoot command
+    \nofoot{
+    \begin{frame}{Example Image (no Footer)}
+      An example of a citation \cite{ref:oetiker1995not} and a footnote reference.
+      \blfootnote{\bibentry{ref:oetiker1995not}}
+    \end{frame}
+    }
 
-  % references slide
-  \nofoot{
-  \begin{frame}{References}
-    \setbeamertemplate{bibliography item}[text]
-    \bibliographystyle{ieeetr}
-    \bibliography{refs}
-  \end{frame}
-  }
+    \section*{References}
+
+    % references slide
+    \nofoot{
+    \begin{frame}{References}
+      \setbeamertemplate{bibliography item}[text]
+      \bibliographystyle{ieeetr}
+      \bibliography{refs}
+    \end{frame}
+    }
+
+    \section{Beamer-specific Environments}
+
+    \subsection{Columns}
+
+    \begin{frame}{Columns}{\texttt{columns}, \texttt{column} environment}
+    \begin{columns}
+        \begin{column}{0.5\textwidth} % first column
+            \tiny{\lipsum[1-1]}
+        \end{column}
+
+        \begin{column}{0.5\textwidth} % second column
+            \includegraphics[width=0.9\columnwidth]{Theme/Logos/DavisLogoV3.png}
+        \end{column}
+    \end{columns}
+    \end{frame}
+
+    \subsection{Blocks}
+
+    \label{Blocks}
+    \begin{frame}{Blocks}{Generic blocks}
+
+    \begin{block}{Block 1}
+    This is a simple block in beamer.
+    \end{block}
+
+    \begin{alertblock}{Block 2}
+    This is an alert block in beamer.
+    \end{alertblock}
+
+    \begin{exampleblock}{Block 3}
+    This is an example block in beamer.
+    \end{exampleblock}
+
+    \end{frame}
+
+
+    \begin{frame}{Blocks}{Math blocks}
+
+    \begin{theorem}
+        It's in \LaTeX{} so it must be true $ a^2 + b^2 = c^2$.
+    \end{theorem}
+    \begin{corollary}
+        a = b
+    \end{corollary}
+    \begin{proof}
+        a + b = b + c
+    \end{proof}
+    \end{frame}
+    \subsection{Hyperlinks and Buttons}
+    \begin{frame}{Hyperlinks and Buttons}
+
+        \hyperlink{Blocks}{Click here to return to `Blocks'}
+
+        \hyperlink{Outline}{\beamerbutton{Click here to return to `Outline'}}
+    \end{frame}
 
 \end{document}
+
+% \begin{document}
+
+%   \footnotesize{
+%   {\setbeamertemplate{footline}{} 
+%   \frame{\titlepage}}
+
+%   \section*{Outline}
+
+%   % Example outline frame; renders sections, subsections, etc.
+%   \begin{frame}{Outline}
+%     \tableofcontents
+%   \end{frame}
+
+%   \section{Introduction}
+
+%     % Example frame for introducing a section 
+%     \begin{frame}[plain]
+%       \vfill
+%       \centering
+%       \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{}
+%         \usebeamerfont{title}\insertsectionhead\par%
+%         \color{davisblue}\noindent\rule{10cm}{1pt} \\
+%         \footnotesize{Section subtitle}
+%       \end{beamercolorbox}
+%       \vfill
+%     \end{frame}
+    
+%   \subsection{Images}
+
+%     \begin{frame}{Example Image}
+%       \begin{figure}
+%         \includegraphics[width=0.7\linewidth]{example-image}
+%         \caption{\texttt{example-image} is provided by default in most \LaTeX distributions.}
+%         \label{fig:example}
+%       \end{figure}
+%     \end{frame}
+
+%     % nofoot = suppresses the footer bar/badge.
+%     %          provides more space in a given frame.
+%     \nofoot{
+%     \begin{frame}{Example Image (no Footer)}
+%       \begin{figure}
+%         \includegraphics[width=0.8\linewidth]{example-image}
+%         \caption{\texttt{example-image} with footer suppressed.}
+%         \label{fig:example-nofoot}
+%       \end{figure}
+%     \end{frame}
+%     }
+
+%   \subsection{Citations}
+
+%     % blfootnote = make space for in-frame references to complement citations
+%     %              wrapper for bibentry command; use with frame surrounded by nofoot command
+%     \nofoot{
+%     \begin{frame}{Example Image (no Footer)}
+%       An example of a citation \cite{ref:oetiker1995not} and a footnote reference.
+%       \blfootnote{\bibentry{ref:oetiker1995not}}
+%     \end{frame}
+%     }
+
+%   \section*{References}
+
+%     % references slide
+%     \nofoot{
+%     \begin{frame}{References}
+%       \setbeamertemplate{bibliography item}[text]
+%       \bibliographystyle{ieeetr}
+%       \bibliography{refs}
+%     \end{frame}
+%     }
+
+% \end{document}
