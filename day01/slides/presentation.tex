@@ -31,7 +31,7 @@
 \titlegraphic{\includegraphics[width=3cm]{Theme/Logos/DavisLogoV1.png}}
 \author{\small{Mason del Rosario}}
 \institute{\LaTeX 101}
-\date{September 2021} %\today
+\date{March 21, 2022} %\today
 
 \begin{document}
 
@@ -95,7 +95,7 @@
     \LaTeX -- Markup language for academic documents (e.g., publications, presentations, lecture notes, assignments).
     \begin{figure}
       \includegraphics[width=0.8\linewidth]{latex_example.png}
-      \caption{Example -- \LaTeX \; snippet for this slide.}
+      \caption{Example -- \LaTeX{}  snippet for this slide.}
       \label{fig:latex}
     \end{figure}
   \end{frame}
@@ -109,7 +109,7 @@
     \end{equation}
     \begin{figure}
       \includegraphics[width=0.8\linewidth]{equation_example.png}
-      \caption{Example -- \LaTeX snippet for this equation.}
+      \caption{Example -- \LaTeX{} snippet for this equation.}
       \label{fig:equation}
     \end{figure}
   \end{frame}
@@ -277,7 +277,7 @@
   \begin{frame}{Exercise: Text and Whitespace}
     \begin{itemize}
       \item Try adding text to your project, recompiling, and seeing the changes in your PDF.
-      \item Add some paragraphs with variable spacing. How does \LaTeX handle multiple spaces?
+      \item Add some paragraphs with variable spacing. How does \LaTeX{} handle multiple spaces?
       % \item Explore how your editor works; double click somewhere on your PDF, and see where your cursor moves in your source file.
       \item Share your observations/questions in chat!
     \end{itemize}
@@ -358,7 +358,7 @@
   \begin{itemize}
     \item Try formatting some text. Can you find any new formats at \texttt{https://latex-tutorial.com/changing-font-style/}?
     % \item Experiment with different sectioning levels. Try using \texttt{\textbackslash documentclass\{report\}} instead of \texttt{\textbackslash documentclass\{article\}} and adding \texttt{\textbackslash chapter} commands. How do they look?
-    \item Try out \texttt{\textbackslash paragraph} and (even) \texttt{\textbackslash subparagraph} to see they work: by default, they don’t add numbers.
+    \item Try out \texttt{\textbackslash paragraph} and \texttt{\textbackslash subparagraph} to see how they work (by default, they don’t add numbers).
     \item Make some lists, and nest one list inside another. How does the format of the numbers or markers change? (You can only go to four levels with standard \LaTeX.)
   \end{itemize}
   \end{frame}
@@ -523,193 +523,11 @@
   \end{frame}
 
   \begin{frame}{Day 01 Break Time}
-    When we come back, I'll introduce the assignment:
+    When we come back, I'll introduce the exercise:
     \begin{itemize}
-      \item \texttt{https://github.com/mdelrosa/latex101/blob/master/day01/exercise/day-01-exercise.pdf}
+      \item \href{https://github.com/mdelrosa/latex101/blob/master/day01/exercise/day-01-exercise.pdf}{Day 01 Exercise (Github)}
     \end{itemize}
   \end{frame}
-
-  % \section{Figures}
-
-  % \begin{frame}[plain]
-  %   \vfill
-  %   \centering
-  %   \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{Graphics}
-  %     \usebeamerfont{title}\insertsectionhead\par%
-  %     \color{davisblue}\noindent\rule{10cm}{1pt} \\
-  %     \footnotesize{Including images, resizing, positioning}
-  %   \end{beamercolorbox}
-  %   \vfill
-  % \end{frame}
-
-  % \begin{frame}{\texttt{graphicx} package}
-  %   The \texttt{graphicx} package provides the \texttt{\textbackslash includegraphics} command.
-  %   \begin{figure}
-  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-10A-graphic.png}
-  %     \caption{\texttt{example-image} is provided by default in most \LaTeX distributions.}
-  %     \label{fig:day01-overleaf-10A}
-  %   \end{figure}
-  % \end{frame}
-
-  % \nofoot{
-  % \begin{frame}{Scaling Images}
-  %   \begin{itemize} 
-  %     \item \texttt{\textbackslash includegraphics} takes optional arguments for scaling
-  %     \item Common commands: \texttt{\textbackslash textheight}, \texttt{\textbackslash textwidth}
-  %   \end{itemize}
-  %   \begin{figure}
-  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-10B-graphic.png}
-  %     \caption{Optional arguments to change \texttt{width} and \texttt{height} of graphics.}
-  %     \label{fig:day01-overleaf-10B}
-  %   \end{figure}
-  % \end{frame}
-  % }
-
-  % \nofoot{
-  % \begin{frame}{Clipping, Rotating Images}
-  %   \texttt{\textbackslash includegraphics} takes optional arguments for clipping and rotating
-  %   \begin{figure}
-  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-10C-graphic.png}
-  %     \caption{Optional arguments \texttt{clip}, \texttt{trim}, and \texttt{angle}.}
-  %     \label{fig:day01-overleaf-10C}
-  %   \end{figure}
-  % \end{frame}
-  % }
-
-  % \nofoot{
-  % \begin{frame}{Floats}
-  %   Including images can lead to large gaps in text.
-  %   \begin{figure}
-  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-10D-graphic.png}
-  %     \caption{\texttt{\textbackslash includegraphics} causing a gap on Page 1}.
-  %     \label{fig:day01-overleaf-10D}
-  %   \end{figure}
-  % \end{frame}
-  % }
-
-  % \nofoot{
-  % \begin{frame}{Floats}
-  %   \underline{Floats} - an image environment (e.g., \texttt{figure}) that dynamically adjusts its position.
-  %   \begin{figure}
-  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-10E-graphic-float.png}
-  %     \caption{\texttt{figure} environment causes text to wrap properly}.
-  %     \label{fig:day01-overleaf-10E}
-  %   \end{figure}
-  % \end{frame}
-  % }
-
-  % \nofoot{
-  % \begin{frame}{Floats}
-  %   Optional arguments \texttt{[h]}ere, \texttt{[t]}op, \texttt{[b]}ottom, \texttt{[p]}age control float placement.
-  %   \begin{figure}
-  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-10F-graphic-float.png}
-  %     \caption{\texttt{figure} with \texttt{[hb]} optional argument placed on bottom of page}.
-  %     \label{fig:day01-overleaf-10F}
-  %   \end{figure}
-  % \end{frame}
-  % }
-
-  % \section{Tables}
-
-  % \begin{frame}[plain]
-  %   \vfill
-  %   \centering
-  %   \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{Tables}
-  %     \usebeamerfont{title}\insertsectionhead\par%
-  %     \color{davisblue}\noindent\rule{10cm}{1pt} \\
-  %     \footnotesize{Including images, resizing, positioning}
-  %   \end{beamercolorbox}
-  %   \vfill
-  % \end{frame}
-
-  % \begin{frame}{\texttt{array} package}
-  %   The \texttt{array} package provides commands for tables.
-  %   \begin{figure}
-  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-11A-table.png}
-  %     \caption{A \texttt{tabular} environment provided by \texttt{array} packages.}
-  %     \label{fig:day01-overleaf-11A}
-  %   \end{figure}
-  % \end{frame}
-
-  % \begin{frame}{Aligning Columns}
-  %   Argument to \texttt{tabular} changes alignment -- \texttt{\{l\}}eft, \texttt{\{c\}}enter, \texttt{\{r\}}ight.
-  %   \begin{figure}
-  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-11B-table-align.png}
-  %     \caption{Same table with left, center, and right (\texttt{\{lcr\}}) column alignments.}
-  %     \label{fig:day01-overleaf-11B}
-  %   \end{figure}
-  % \end{frame}
-
-  % \begin{frame}{Paragraph Columns}
-  %   (\texttt{\{lcr\}}) columns will typeset into single row, even if they are wider than the page.
-  %   \begin{figure}
-  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-11C-table-overflow.png}
-  %     \caption{A runaway \texttt{l} column.}
-  %     \label{fig:day01-overleaf-11C}
-  %   \end{figure}
-  % \end{frame}
-
-  % \begin{frame}{Paragraph Columns}
-  %   (\texttt{\{p\}}) columns are forced to a given width.
-  %   \begin{figure}
-  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-11D-table-overflow.png}
-  %     \caption{Same text in a \texttt{p} column with wrapped text.}
-  %     \label{fig:day01-overleaf-11D}
-  %   \end{figure}
-  % \end{frame}
-
-  % \begin{frame}{Adding rules}
-  %   Rules (lines) are enabled with the \texttt{booktabs} package.
-  %   \begin{figure}
-  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-11E-table-rule.png}
-  %     % \caption{}
-  %     % \label{fig:day01-overleaf-11E}
-  %   \end{figure}
-  % \end{frame}
-
-  % \begin{frame}{Adding rules}
-  %   \texttt{\textbackslash cmidrule} spans a subset of columns.
-  %   \begin{figure}
-  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-11F-table-cmidrule.png}
-  %   \end{figure}
-  % \end{frame}
-
-  % \begin{frame}{Adding line space}
-  %   \texttt{\textbackslash addlinespace} useful for more subtle separation.
-  %   \begin{figure}
-  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-11G-table-linespace.png}
-  %   \end{figure}
-  % \end{frame}
-
-  % \begin{frame}{Merging cells}
-  %   \texttt{\textbackslash multicolumn} creates cells spanning multiple columns. Arguments include:
-  %   \begin{enumerate}
-  %     \item Number of columns cell spans
-  %     \item Alignment of cell
-  %     \item Contents of cell
-  %   \end{enumerate}
-  %   \begin{figure}
-  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-11H-table-merge.png}
-  %   \end{figure}
-  % \end{frame}
-
-  % \begin{frame}{Merging cells vertically}
-  %   No support for vertical merging. Workaround: use blank cells!
-  %   \begin{figure}
-  %     \includegraphics[width=0.9\linewidth]{day01-overleaf-11I-table-vertmerge.png}
-  %   \end{figure}
-  % \end{frame}
-
-  % \nofoot{
-  % \begin{frame}{Table Generation}
-  %   Useful utility for table creation: \url{https://www.tablesgenerator.com/}.
-  %   \begin{figure}
-  %     \includegraphics[width=0.6\linewidth]{day01-overleaf-12A-table-creation.png}
-  %     \caption{Generate code for table based on WYSIWYG editor.}
-  %     \label{fig:day01-overleaf-12A}
-  %   \end{figure}
-  % \end{frame}
-  % }
 
 \begin{frame}{End of Day 01}
   \begin{itemize}
