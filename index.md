@@ -4,6 +4,14 @@
 
 If you still have questions, you can email mdelrosa(at)ucdavis.edu or join the Slack channel (\#latex101 on the [UC Davis Slack server](https://ucdavis.slack.com/)).
 
+## Workshop Recordings
+
+Recordings for the first hour of each workshop are available below (ucdavis.edu Zoom account required):
+
+- [Day 01 (March 21st)](https://ucdavis.zoom.us/rec/share/xnUn7uTdalYCilbMl2oqQk_gyZGTWIal9oVk75Oogir-eTy0m5PWI1ZGXQFVNYH5.nMLSfl1dNyVB8aNz)
+- Day 02 (Coming soon!)
+- Day 03 (Coming soon!)
+
 ## Background
 
 Welcome! This is a guided walkthrough of the major concepts from the online tutorial, [LearnLaTeX](https://www.learnlatex.org/en/), for the graduate community at UC Davis.
