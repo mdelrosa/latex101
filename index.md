@@ -43,11 +43,13 @@ On Day 3, I will cover how to use common LaTeX templates, including a CV and a B
 
 ### Day 3. Templates (CV, Beamer)
 - Prerequisites:
-	- Bring either a CV or presentation slides you want to convert
+	- Bring either a CV or presentation slides you want to convert to LaTeX
 - Agenda:
 	- Go over templates (~40 minutes)
-		- CV Template (**TODO**) 
-		- Beamer Template (**TODO**)
+		- [CV Template](https://github.com/mdelrosa/latex101/tree/master/day03/CV)
+		- [Beamer Template (default)](https://github.com/mdelrosa/latex101/tree/master/day03/default_beamer_template)
+		- [Beamer Template (Davis)](https://github.com/mdelrosa/latex101/tree/master/day03/davis_beamer_template)
+		- Zip files for these templates are available at the [releases page](https://github.com/mdelrosa/latex101/releases)
 	- Work on CVs/Beamer slides (~1 hour)
 
 ## Resources
