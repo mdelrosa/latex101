@@ -1,8 +1,8 @@
 # LaTeX 101 Workshop - UC Davis GradPathways
 
-**Note (3/11/2022)**: The [Eventbrite page is live](https://www.eventbrite.com/e/latex-101-workshop-tickets-295544520617)! Date/Time: March 21st to 23rd, 10 AM - 12 PM each day. Each day builds upon the previous day, so attending all three days is strongly encouraged!
-
-If you still have questions, you can email mdelrosa(at)ucdavis.edu or join the Slack channel (\#latex101 on the [UC Davis Slack server](https://ucdavis.slack.com/)).
+Contact:
+- email: mdelrosa(at)ucdavis.edu 
+- Slack: \#latex101 on the [UC Davis Slack server](https://ucdavis.slack.com/).
 
 ## Workshop Recordings
 
@@ -10,7 +10,7 @@ Recordings for the first hour of each workshop are available below (ucdavis.edu 
 
 - [Day 01 (March 21st)](https://ucdavis.zoom.us/rec/share/xnUn7uTdalYCilbMl2oqQk_gyZGTWIal9oVk75Oogir-eTy0m5PWI1ZGXQFVNYH5.nMLSfl1dNyVB8aNz)
 - [Day 02 (March 22nd)](https://ucdavis.zoom.us/rec/share/IzIkWn7RYb-kAvH7K6L-JIMobIn5AnTnO1814FrSozmURZnZmmgPpaj9OMlbY6uk.aM4wkR4srG0j_iHA)
-- Day 03 (Coming soon!)
+- [Day 03 (March 23rd)](https://ucdavis.zoom.us/rec/share/YkKw9e19nczVcrGGKRClg9eFH3HiN25rGabfbPyYh8kmzYdPtHQ_Pdc2YFYhKf4O.o_t2ReqGgWsH34wh)
 
 ## Background
 
@@ -54,14 +54,22 @@ On Day 3, I will cover how to use common LaTeX templates, including a CV and a B
 
 ## Resources
 
-- [Overleaf Documentation](https://www.overleaf.com/learn)
-- [Comprehensive TeX Archive Network (CTAN)](https://www.ctan.org/)
+- Documentation
+	- [Overleaf Documentation](https://www.overleaf.com/learn)
+	- [Comprehensive TeX Archive Network (CTAN)](https://www.ctan.org/)
 	- [Symbols list](https://www.ctan.org/tex-archive/info/symbols/comprehensive/) (check pdfs at bottom of page)
-- [Detexify](http://detexify.kirelabs.org/classify.html) - Draw a symbol and see the corresponding LaTeX command.
-- [Tables Generator](https://www.tablesgenerator.com/) - Draw a table with WYSIWYG interface, get the LaTeX code for it.
-- LaTeX Forums -- Other places you can go for help
+	- [Beamer Themese](https://latex-beamer.com/tutorials/beamer-themes/) 
+- Utilities
+	- [Detexify](http://detexify.kirelabs.org/classify.html) - Draw a symbol and see the corresponding LaTeX command.
+	- [Tables Generator](https://www.tablesgenerator.com/) - Draw a table with WYSIWYG interface, get the LaTeX code for it.
+	- [Inkscape](https://inkscape.org/) - For drawing figures with embedded LaTeX
+		- - [Castel's Blog Post on figures for mathematical lecture notes](https://castel.dev/post/lecture-notes-2/) 	
+- LaTeX Forums -- places you can go for help
 	- \#latex101, \#latex channels on [UC Davis Slack](https://ucdavis.slack.com/) (UC Davis only)
 	- [r/latex](https://www.reddit.com/r/LaTeX/)
 	- [TeX on Stack Exchange](https://tex.stackexchange.com/)
-- [Inkscape](https://inkscape.org/) - For drawing figures with embedded LaTeX
-	- [Castel's Blog Post on figures for mathematical lecture notes](https://castel.dev/post/lecture-notes-2/)
+- Local LaTeX Installations
+	- [TeXStudio](https://www.texstudio.org/): An integrated editor for creating LaTeX documents (Windows, Linux and macOS).
+	- [MiKTeX](https://miktex.org/): A modern TeX distribution for Windows, Linux and macOS. Does not come with an editor.
+	- For Sublime users, [LaTeXTools](https://latextools.readthedocs.io/en/latest/install/) will let you compile .tex files	
+	
