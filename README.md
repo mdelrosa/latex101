@@ -10,6 +10,14 @@ You will not need to download any software to participate. We primarily use [Ove
 
 On Day 3, I will cover how to use common LaTeX templates, including a CV and a Beamer template.
 
+## Workshop Recordings
+
+Recordings for the first hour of each workshop are available below:
+
+- [Day 01 (March 21st)](https://www.youtube.com/watch?v=IxqZizzUU_4)
+- [Day 02 (March 22nd)](https://www.youtube.com/watch?v=RM1XkqIekjc)
+- [Day 03 (March 23rd)](https://www.youtube.com/watch?v=c-6SD248bQY)
+
 ## Course Outline
 
 ### Day 1. Introduction + Basic LaTeX
