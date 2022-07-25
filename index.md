@@ -6,7 +6,7 @@ Contact:
 
 ## Workshop Recordings
 
-Recordings for the first hour of each workshop are available below (ucdavis.edu Zoom account required):
+Recordings for the first hour of each workshop are available below:
 
 - [Day 01 (March 21st)](https://www.youtube.com/watch?v=IxqZizzUU_4)
 - [Day 02 (March 22nd)](https://www.youtube.com/watch?v=RM1XkqIekjc)
