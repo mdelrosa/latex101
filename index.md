@@ -8,9 +8,9 @@ Contact:
 
 Recordings for the first hour of each workshop are available below (ucdavis.edu Zoom account required):
 
-- [Day 01 (March 21st)](https://ucdavis.zoom.us/rec/share/xnUn7uTdalYCilbMl2oqQk_gyZGTWIal9oVk75Oogir-eTy0m5PWI1ZGXQFVNYH5.nMLSfl1dNyVB8aNz)
-- [Day 02 (March 22nd)](https://ucdavis.zoom.us/rec/share/IzIkWn7RYb-kAvH7K6L-JIMobIn5AnTnO1814FrSozmURZnZmmgPpaj9OMlbY6uk.aM4wkR4srG0j_iHA)
-- [Day 03 (March 23rd)](https://ucdavis.zoom.us/rec/share/aNU1rQyr3Ghyo-JnQbjozVR0G3woOJFNQUMcT4V5vOwpi0m7fUq7uhWsBUb5Kcva.rg90tCnkcGU4SJAg)
+- [Day 01 (March 21st)](https://www.youtube.com/watch?v=IxqZizzUU_4)
+- [Day 02 (March 22nd)](https://www.youtube.com/watch?v=RM1XkqIekjc)
+- [Day 03 (March 23rd)](https://www.youtube.com/watch?v=c-6SD248bQY)
 
 ## Background
 
